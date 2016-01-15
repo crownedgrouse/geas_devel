@@ -1,0 +1,73 @@
+% beam_lib:version(Beam) ->
+%           {ok, {module(), [Version :: term()]}} |
+%           {error, beam_lib, chnk_rsn()}
+
+% build_type
+% c_compiler_used
+% driver_version
+% machine
+% otp_release
+% smp_support
+% erlang:system_info(system_architecture).
+%  "i686-pc-linux-gnu"
+% threads
+% version
+% 
+
+%    Solaris 8, 9
+%        Sparc32
+%        Sparc64
+%    Solaris 10
+%        Sparc32
+%        Sparc64
+%        x86
+%    SuSE Linux/GNU 9.4, 10.1
+%        x86 
+%    SuSE Linux/GNU 10.0, 10.1, 11.0
+%        x86
+%        x86_64
+%    openSuSE 11.4 (Celadon)
+%        x86_64 (valgrind) 
+%    Fedora 7
+%        PowerPC 
+%    Fedora 16
+%        x86_64 
+%    Gentoo Linux/GNU 1.12.11.1
+%        x86 
+%    Ubuntu Linux/GNU 7.04, 10.04, 10.10, 11.04, 12.04
+%        x86_64 
+%    MontaVista Linux/GNU 4.0.1
+%        PowerPC 
+%    FreeBSD 10.0
+%        x86 
+%    OpenBSD 5.4
+%        x86_64 
+%    OS X 10.5.8 (Leopard), 10.7.5 (Lion), 10.9.1 (Mavericks)
+%        x86 
+%    Windows XP SP3, 2003, Vista, 7
+%        x86 
+%    Windows 7
+%        x86_64 
+
+% Daily Cross Builds:
+%    SuSE Linux/GNU 10.1 x86 -> SuSE Linux/GNU 10.1 x86_64
+%    SuSE Linux/GNU 10.1 x86_64 -> Linux/GNU TILEPro64
+
+% Daily Cross Build Tests:
+%    SuSE Linux/GNU 10.1 x86_64 
+
+
+
+% beam_lib:chunks("/home/eric/git/swab/ebin/swab", [compile_info]). 
+%{ok,{swab,[{compile_info,[{options,[{outdir,"/home/eric/git/swab/ebin"},
+%                                    {i,"/home/eric/git/swab/include"},
+%                                    warn_obsolete_guard,warn_shadow_vars,warn_export_vars,
+%                                    warn_export_all,debug_info]},
+%                          {version,"5.0"},
+%                          {time,{2014,9,7,20,49,46}},
+%                          {source,"/home/eric/git/swab/src/swab.erl"}]}]}}
+
+% erlang modules {attributes,[{app_vsn,"snmp-4.25.1"}
+% erlang modules {ok, C, _}= erl_scan:string(binary_to_list(B)).
+
+
