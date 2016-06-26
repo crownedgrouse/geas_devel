@@ -1,0 +1,678 @@
+%YAML 1.2
+---
+from: 18.3
+to: 19.0
+modules:
+   new:
+   - beam_bs
+   - beam_reorder
+   - ct_groups
+   - ct_property_test
+   - ct_release_test
+   - ct_webtool
+   - ct_webtool_sup
+   - dialyzer_race_data_server
+   - diameter_config_sup
+   - erl_tracer
+   - erts_code_purger
+   - gen_statem
+   - hipe_icode_call_elim
+   - local_tcp
+   - local_udp
+   - mnesia_backend_type
+   - mnesia_ext_sup
+   - msacc
+   - observer_port_wx
+   - ssh_dbg
+   - ssl_crl_hash_dir
+   - test_server_gl
+   removed:
+   - cover_web
+   - inets_time_compat
+   - overload
+functions:
+   new:
+      cerl:
+      - c_map_pair_exact/2
+      - is_c_map_pattern/1
+      cerl_trees:
+      - mapfold/4
+      code:
+      - atomic_load/1
+      - ensure_modules_loaded/1
+      - finish_loading/1
+      - prepare_loading/1
+      code_server:
+      - call/1
+      compile:
+      - env_compiler_options/0
+      core_pp:
+      - format_all/1
+      ct_master:
+      - esc_chars/1
+      ct_telnet_client:
+      - open/6
+      dbg:
+      - ctpe/1
+      - tpe/2
+      dialyzer_utils:
+      - refold_pattern/1
+      diameter:
+      - peer_find/1
+      - peer_info/1
+      diameter_config:
+      - start_link/1
+      - subscribe/2
+      diameter_lib:
+      - timestamp/0
+      diameter_peer_fsm:
+      - find/1
+      diameter_reg:
+      - remove/1
+      - subs/0
+      - subscribe/2
+      - waits/0
+      diameter_service:
+      - peer_info/1
+      dtls_connection:
+      - abbreviated/3
+      - certify/3
+      - cipher/3
+      - connection/3
+      - downgrade/3
+      - error/3
+      - format_status/2
+      - hello/3
+      - init/3
+      - next_event/3
+      - next_record_if_active/1
+      - passive_receive/2
+      - queue_change_cipher/2
+      - queue_handshake/2
+      dtls_handshake:
+      - dtls_handshake_new_epoch/1
+      - dtls_handshake_new_flight/1
+      - hello_verify_request/1
+      dtls_record:
+      - encode_tls_cipher_text/5
+      - highest_protocol_version/2
+      - is_higher/2
+      - lowest_protocol_version/1
+      dyntrace:
+      - enabled/3
+      - enabled_call/3
+      - enabled_garbage_collection/3
+      - enabled_ports/3
+      - enabled_procs/3
+      - enabled_receive/3
+      - enabled_running_ports/3
+      - enabled_running_procs/3
+      - enabled_send/3
+      - trace/5
+      - trace_call/5
+      - trace_garbage_collection/5
+      - trace_ports/5
+      - trace_procs/5
+      - trace_receive/5
+      - trace_running_ports/5
+      - trace_running_procs/5
+      - trace_send/5
+      egd_render:
+      - line_to_linespans/3
+      elf_format:
+      - elf_symbols/1
+      - read/1
+      - section_contents/2
+      erl_distribution:
+      - start_link/2
+      erl_prim_loader:
+      - get_modules/2
+      - get_modules/3
+      - purge_archive_cache/0
+      - start/0
+      erl_syntax:
+      - annotated_type/2
+      - annotated_type_body/1
+      - annotated_type_name/1
+      - bitstring_type/2
+      - bitstring_type_m/1
+      - bitstring_type_n/1
+      - constrained_function_type/2
+      - constrained_function_type_argument/1
+      - constrained_function_type_body/1
+      - constraint/2
+      - constraint_argument/1
+      - constraint_body/1
+      - fun_type/0
+      - function_type/1
+      - function_type/2
+      - function_type_arguments/1
+      - function_type_return/1
+      - integer_range_type/2
+      - integer_range_type_high/1
+      - integer_range_type_low/1
+      - map_type/0
+      - map_type/1
+      - map_type_assoc/2
+      - map_type_assoc_name/1
+      - map_type_assoc_value/1
+      - map_type_exact/2
+      - map_type_exact_name/1
+      - map_type_exact_value/1
+      - map_type_fields/1
+      - record_type/2
+      - record_type_field/2
+      - record_type_field_name/1
+      - record_type_field_type/1
+      - record_type_fields/1
+      - record_type_name/1
+      - tuple_type/0
+      - tuple_type/1
+      - tuple_type_elements/1
+      - type_application/2
+      - type_application/3
+      - type_application_arguments/1
+      - type_application_name/1
+      - type_union/1
+      - type_union_types/1
+      - typed_record_field/2
+      - typed_record_field_body/1
+      - typed_record_field_type/1
+      - user_type_application/2
+      - user_type_application_arguments/1
+      - user_type_application_name/1
+      erl_syntax_lib:
+      - analyze_type_application/1
+      - analyze_type_name/1
+      erl_types:
+      - cache__new/0
+      - map_pairwise_merge/3
+      - t_check_record_fields/6
+      - t_from_form/6
+      - t_is_singleton/1
+      - t_is_singleton/2
+      - t_map/3
+      - t_map_def_key/1
+      - t_map_def_key/2
+      - t_map_def_val/1
+      - t_map_def_val/2
+      - t_map_entries/1
+      - t_map_entries/2
+      - t_map_get/2
+      - t_map_get/3
+      - t_map_is_key/2
+      - t_map_is_key/3
+      - t_map_put/2
+      - t_map_put/3
+      - t_map_update/2
+      - t_map_update/3
+      - t_singleton_to_term/2
+      - var_table__new/0
+      erlang:
+      - has_prepared_code_on_load/1
+      erts_debug:
+      - copy_shared/1
+      - size_shared/1
+      erts_internal:
+      - await_microstate_accounting_modifications/3
+      - check_process_code/3
+      - copy_literals/2
+      - gather_microstate_accounting_result/2
+      - open_port/2
+      - perf_counter_unit/0
+      - purge_module/1
+      - term_type/1
+      - trace/3
+      - trace_pattern/3
+      filename:
+      - basedir/2
+      - basedir/3
+      gen:
+      - debug_options/2
+      - get_parent/0
+      - get_proc_name/1
+      - name/1
+      - unregister_name/1
+      hipe:
+      - get_llvm_version/0
+      hipe_consttab:
+      - insert_binary_const/3
+      hipe_llvm:
+      - meta_id/1
+      - meta_operands/1
+      - mk_meta/2
+      - pp_ins/3
+      - pp_ins_list/3
+      hipe_unified_loader:
+      - post_beam_load/1
+      httpd_example:
+      - peer/2
+      inet:
+      - sctp_module/1
+      - tcp_module/1
+      - tcp_module/2
+      - udp_module/1
+      inet6_tcp:
+      - translate_ip/1
+      inet6_udp:
+      - translate_ip/1
+      inet_tcp:
+      - translate_ip/1
+      inet_udp:
+      - translate_ip/1
+      lists:
+      - join/2
+      maps:
+      - take/2
+      - update_with/3
+      - update_with/4
+      mnesia:
+      - add_backend_type/2
+      - create_schema/2
+      mnesia_bup:
+      - create_schema/2
+      - trav_apply/5
+      mnesia_dumper:
+      - dump_to_logfile/2
+      - load_from_logfile/3
+      mnesia_index:
+      - add_index/6
+      - delete_index/4
+      - ext_index_instances/1
+      - index_info/2
+      mnesia_lib:
+      - db_foldl/3
+      - db_foldl/4
+      - db_foldl/6
+      - semantics/2
+      - tab2logtmp/1
+      - validate_key/2
+      - validate_record/2
+      mnesia_monitor:
+      - unsafe_create_external/4
+      mnesia_schema:
+      - add_backend_type/2
+      - add_index_plugin/3
+      - backend_types/0
+      - delete_backend_type/1
+      - delete_index_plugin/1
+      - do_add_backend_type/2
+      - do_add_index_plugin/3
+      - do_change_table_copy_type/3
+      - do_delete_backend_type/1
+      - do_delete_index_plugin/1
+      - get_initial_schema/3
+      - index_plugins/0
+      - init_backends/0
+      - list2cs/2
+      mnesia_tm:
+      - new_cr_format/1
+      net_kernel:
+      - start_link/2
+      observer_backend:
+      - get_port_list/0
+      observer_perf_wx:
+      - add_data/5
+      - destroy_gc/1
+      - interval_dialog/2
+      - make_gc/2
+      - make_win/4
+      - precalc/4
+      - refresh_panel/4
+      observer_trace_wx:
+      - add_ports/1
+      - add_processes/1
+      observer_traceoptions_wx:
+      - port_trace/2
+      - select_matchspec/4
+      observer_wx:
+      - get_active_node/0
+      os:
+      - perf_counter/0
+      - perf_counter/1
+      public_key:
+      - pkix_match_dist_point/2
+      - short_name_hash/1
+      ssh:
+      - connect/2
+      - daemon_info/1
+      ssh_acceptor:
+      - callback_listen/3
+      - handle_connection/5
+      ssh_channel:
+      - cache_info/2
+      ssh_connection_handler:
+      - disconnect/1
+      - disconnect/2
+      - handle_event/4
+      - init_connection_handler/3
+      - init_ssh_record/3
+      ssh_info:
+      - collect_pids/0
+      - string/0
+      ssh_xfer:
+      - attach/3
+      - connect/5
+      ssl:
+      - getstat/1
+      - getstat/2
+      ssl_cipher:
+      - des_suites/1
+      - random_bytes/1
+      ssl_connection:
+      - abbreviated/4
+      - certify/4
+      - cipher/4
+      - connection/4
+      - downgrade/4
+      - handle_call/5
+      - hello/4
+      - hibernate_after/3
+      - init/4
+      - prepare_connection/2
+      - ssl_config/3
+      - start_or_recv_cancel_timer/2
+      ssl_crl_cache:
+      - lookup/3
+      ssl_handshake:
+      - available_signature_algs/3
+      - available_signature_algs/4
+      - certificate_request/5
+      - prf/6
+      - select_hashsign/5
+      - select_session/11
+      ssl_record:
+      - init_connection_states/2
+      ssl_socket:
+      - getstat/3
+      supervisor:
+      - format_status/2
+      tls_connection:
+      - abbreviated/3
+      - certify/3
+      - cipher/3
+      - connection/3
+      - downgrade/3
+      - error/3
+      - handle_common_event/4
+      - handle_sni_extension/2
+      - hello/3
+      - init/3
+      - next_event/3
+      - queue_change_cipher/2
+      - queue_handshake/2
+      - reinit_handshake_data/1
+      - renegotiate/2
+      tls_handshake:
+      - decode_handshake/4
+      - get_tls_handshake/4
+      tls_v1:
+      - default_signature_algs/1
+      - signature_algs/2
+      ttb:
+      - ctpe/1
+      - tpe/2
+      unix_telnet:
+      - connect/7
+      - connect1/8
+      wx:
+      - equal/2
+      wxListCtrl:
+      - hitTest/2
+      wx_object:
+      - set_pid/2
+   removed:
+      code:
+      - start_link/1
+      code_server:
+      - call/2
+      - system_continue/3
+      - system_terminate/4
+      core_lib:
+      - get_anno/1
+      - is_literal/1
+      - is_literal_list/1
+      - literal_value/1
+      - set_anno/2
+      crypto:
+      - rand_bytes/3
+      dialyzer_coordinator:
+      - wait_activation/0
+      dialyzer_worker:
+      - sequential/4
+      diameter_lib:
+      - seed/0
+      diameter_reg:
+      - del/1
+      - repl/2
+      dtls_connection:
+      - abbreviated/2
+      - certify/2
+      - cipher/2
+      - connection/2
+      - handle_event/3
+      - handle_info/3
+      - handle_own_alert/4
+      - handle_sync_event/4
+      - hello/2
+      - next_state/4
+      - send_alert/2
+      - send_change_cipher/2
+      dtls_record:
+      - encode_handshake/3
+      elf_format:
+      - get_rela_addends/1
+      - get_rodata_relocs/1
+      - get_tab_entries/1
+      - get_text_relocs/1
+      - is64bit/0
+      - set_architecture_flag/1
+      erl_distribution:
+      - start_link/1
+      erl_lint:
+      - modify_line/2
+      erl_parse:
+      - get_attribute/2
+      - get_attributes/1
+      - set_line/2
+      erl_prim_loader:
+      - get_files/2
+      - release_archives/0
+      - start/3
+      erl_scan:
+      - attributes_info/1
+      - attributes_info/2
+      - set_attribute/3
+      - token_info/1
+      - token_info/2
+      erl_types:
+      - subst_all_remote/2
+      - t_check_record_fields/4
+      - t_check_record_fields/5
+      - t_from_form/4
+      - t_from_form/5
+      - t_is_remote/1
+      - t_remote/3
+      erts_internal:
+      - map_type/1
+      gen:
+      - debug_options/1
+      hipe_llvm:
+      - branch_meta_false_weight/1
+      - branch_meta_id/1
+      - branch_meta_true_weight/1
+      - mk_branch_meta/3
+      - pp_ins/2
+      - pp_ins_list/2
+      hipe_unified_loader:
+      - post_beam_load/2
+      mnesia_bup:
+      - trav_apply/4
+      mnesia_index:
+      - add_index/5
+      - delete_index/3
+      - tab2tmp_filename/2
+      mnesia_schema:
+      - get_initial_schema/2
+      net_kernel:
+      - start_link/1
+      observer_perf_wx:
+      - refresh_panel/6
+      observer_trace_wx:
+      - add_processes/2
+      observer_traceoptions_wx:
+      - select_matchspec/3
+      rpc:
+      - safe_multi_server_call/2
+      - safe_multi_server_call/3
+      ssh_bits:
+      - encode/2
+      - string/1
+      ssh_connection:
+      - cancel_tcpip_forward/3
+      - direct_tcpip/6
+      - direct_tcpip/8
+      - global_request_msg/3
+      - tcpip_forward/3
+      ssh_connection_handler:
+      - add_request/4
+      - after_new_keys/1
+      - after_new_keys_events/2
+      - available_host_key/3
+      - check_cache/2
+      - connected/2
+      - connected_fun/4
+      - counterpart_versions/3
+      - disconnect_fun/2
+      - disconnect_replies/3
+      - do_retry_fun/4
+      - error/2
+      - error_code/1
+      - event/3
+      - generate_event/4
+      - generate_event_new_state/2
+      - get_idle_time/1
+      - getopt/2
+      - global_request/4
+      - handle_channel_down/2
+      - handle_disconnect/2
+      - handle_disconnect/3
+      - handle_disconnect/4
+      - handle_event/3
+      - handle_global_request/2
+      - handle_idle_timeout/1
+      - handle_idle_timer/2
+      - handle_info/3
+      - handle_request/6
+      - handle_request/7
+      - handle_sync_event/4
+      - handle_version/3
+      - handshake/3
+      - hello/2
+      - init/1
+      - init_role/1
+      - init_ssh/5
+      - kex/1
+      - kexinit/2
+      - key_exchange/2
+      - key_exchange_dh_gex_init/2
+      - key_exchange_dh_gex_reply/2
+      - log_error/1
+      - new_channel_id/1
+      - new_keys/2
+      - next_packet/1
+      - not_connected_filter/1
+      - opposite_role/1
+      - remove_timer_ref/1
+      - retry_fun/4
+      - send_all_state_event/2
+      - send_event/2
+      - send_msg/2
+      - send_replies/2
+      - send_reply/1
+      - service_request/2
+      - set_prefix_if_trouble/2
+      - socket_control/3
+      - ssh_channel_info/3
+      - ssh_info/3
+      - start_the_connection_child/4
+      - start_timeout/3
+      - string_version/1
+      - supported_host_keys/3
+      - sync_send_all_state_event/2
+      - sync_send_all_state_event/3
+      - terminate_subsystem/1
+      - unexpected_fun/3
+      - update_sys/4
+      - userauth/2
+      - userauth_keyboard_interactive/2
+      - userauth_keyboard_interactive_info_response/2
+      ssh_info:
+      - children/1
+      - datetime/0
+      - dead_or_alive/1
+      - fmt_host_port/1
+      - indent/2
+      - line/3
+      - nyi/1
+      - print_channel/2
+      - print_channels/2
+      - print_client/2
+      - print_clients/1
+      - print_general/1
+      - print_server/2
+      - print_servers/1
+      - print_system_sup/2
+      - underline/2
+      - underline/3
+      - walk_sups/2
+      - walk_sups/3
+      ssl:
+      - random_bytes/1
+      ssl_connection:
+      - abbreviated/3
+      - certify/3
+      - cipher/3
+      - connection/3
+      - handle_sync_event/4
+      - hello/3
+      ssl_crl_cache:
+      - lookup/2
+      ssl_handshake:
+      - certificate_request/4
+      - prf/5
+      - select_hashsign/3
+      - select_hashsign_algs/2
+      - select_session/10
+      ssl_record:
+      - init_connection_states/1
+      tls_connection:
+      - abbreviated/2
+      - certify/2
+      - cipher/2
+      - connection/2
+      - handle_event/3
+      - handle_info/3
+      - handle_sync_event/4
+      - handle_unexpected_message/3
+      - hello/2
+      - next_state/4
+      - next_state_connection/2
+      - renegotiate/1
+      - send_change_cipher/2
+      tls_handshake:
+      - decode_handshake/3
+      - get_tls_handshake/3
+      unix_telnet:
+      - connect/6
+      - connect1/7
+      wxGauge:
+      - getBezelFace/1
+      - getShadowWidth/1
+      - setBezelFace/2
+      - setShadowWidth/2
+      wxListCtrl:
+      - hitTest/3
+      xref_utils:
+      - subprocess/2
+...
