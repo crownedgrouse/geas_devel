@@ -1,0 +1,122 @@
+%YAML 1.2
+---
+from: 19.0
+to: 19.1
+modules:
+   new:
+   - erts_dirty_process_code_checker
+   - erts_literal_area_collector
+   - snmpc
+   - snmpc_lib
+   - snmpc_mib_gram
+   - snmpc_mib_to_hrl
+   - snmpc_misc
+   - snmpc_tok
+   removed:
+functions:
+   new:
+      ct:
+      - get_verbosity/1
+      - set_verbosity/2
+      ct_gen_conn:
+      - cont_log_no_timestamp/2
+      ct_logs:
+      - cont_log_no_timestamp/2
+      dtls_connection:
+      - callback_mode/0
+      - close/5
+      - handle_common_event/4
+      - reinit_handshake_data/1
+      - renegotiate/2
+      - select_sni_extension/1
+      - send_alert/2
+      dtls_record:
+      - init_connection_states/2
+      erl_types:
+      - t_map_pairwise_merge/4
+      erts_code_purger:
+      - finish_after_on_load/2
+      - pending_purge_lambda/3
+      erts_internal:
+      - check_dirty_process_code/2
+      - is_process_executing_dirty/1
+      - purge_module/2
+      - release_literal_area_switch/0
+      - request_system_task/4
+      gen_statem:
+      - enter_loop/4
+      httpd_example:
+      - put/2
+      inet6_tcp_dist:
+      - getopts/2
+      - setopts/2
+      inet_tcp_dist:
+      - getopts/2
+      - setopts/2
+      - tick/2
+      net_kernel:
+      - getopts/2
+      - setopts/2
+      observer_wx:
+      - get_menubar/0
+      ssh_auth:
+      - handle_userauth_info_request/2
+      ssh_connection_handler:
+      - callback_mode/0
+      ssh_dbg:
+      - messages/2
+      ssh_transport:
+      - sha/1
+      ssl:
+      - tls_version/1
+      ssl_connection:
+      - handle_alert/3
+      - handle_normal_shutdown/3
+      - handle_own_alert/4
+      - read_application_data/2
+      - write_application_data/3
+      ssl_handshake:
+      - master_secret/4
+      - select_hashsign/4
+      - update_handshake_history/3
+      ssl_pkix_db:
+      - decode_pem_file/1
+      - extract_trusted_certs/1
+      ssl_record:
+      - empty_connection_state/2
+      - initial_connection_state/2
+      - initial_security_params/1
+      - record_protocol_role/1
+      tls_connection:
+      - callback_mode/0
+      - select_sni_extension/1
+      tls_record:
+      - init_connection_states/2
+   removed:
+      dtls_connection:
+      - handle_normal_shutdown/3
+      - read_application_data/2
+      erl_types:
+      - map_pairwise_merge/3
+      erts_internal:
+      - copy_literals/2
+      - purge_module/1
+      gen_statem:
+      - enter_loop/7
+      ssh_auth:
+      - handle_userauth_info_request/3
+      ssl_handshake:
+      - master_secret/5
+      - update_handshake_history/2
+      ssl_record:
+      - init_connection_states/2
+      tls_connection:
+      - alert_user/6
+      - alert_user/9
+      - handle_close_alert/3
+      - handle_normal_shutdown/3
+      - handle_own_alert/4
+      - handle_sni_extension/2
+      - read_application_data/2
+      - write_application_data/3
+...
