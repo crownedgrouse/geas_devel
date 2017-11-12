@@ -1,0 +1,147 @@
+%YAML 1.2
+---
+from: 20.0
+to: 20.1
+modules:
+   new:
+   - diameter_gen_doic_rfc7683
+   removed:
+   - egd
+   - egd_font
+   - egd_png
+   - egd_primitives
+   - egd_render
+   - gs
+   - gs_frontend
+   - gs_make
+   - gs_packer
+   - gs_widgets
+   - gse
+   - gstk
+   - gstk_arc
+   - gstk_button
+   - gstk_canvas
+   - gstk_checkbutton
+   - gstk_db
+   - gstk_editor
+   - gstk_entry
+   - gstk_font
+   - gstk_frame
+   - gstk_generic
+   - gstk_grid
+   - gstk_gridline
+   - gstk_gs
+   - gstk_image
+   - gstk_label
+   - gstk_line
+   - gstk_listbox
+   - gstk_menu
+   - gstk_menubar
+   - gstk_menubutton
+   - gstk_menuitem
+   - gstk_oval
+   - gstk_polygon
+   - gstk_port_handler
+   - gstk_radiobutton
+   - gstk_rectangle
+   - gstk_scale
+   - gstk_text
+   - gstk_widgets
+   - gstk_window
+   - ose
+   - percept
+   - percept_analyzer
+   - percept_db
+   - percept_graph
+   - percept_html
+   - percept_image
+   - tcl2erl
+   - tool_file_dialog
+   - tool_utils
+   - webtool
+   - webtool_sup
+functions:
+   new:
+      cdv_detail_wx:
+      - start_link/5
+      crypto:
+      - packed_openssl_version/4
+      - sign/5
+      - verify/6
+      dtls_connection:
+      - protocol_name/0
+      erl_types:
+      - t_from_form_check_remote/4
+      erlang:
+      - iolist_to_iovec/1
+      erts_debug:
+      - lcnt_clear/0
+      - lcnt_collect/0
+      - lcnt_control/1
+      - lcnt_control/2
+      httpd_example:
+      - post_chunked/3
+      httpd_request:
+      - add_chunk/1
+      - body_chunk/3
+      - body_chunk_first/3
+      httpd_response:
+      - handle_continuation/1
+      lcnt:
+      - rt_mask/0
+      - rt_mask/1
+      - rt_mask/2
+      observer_backend:
+      - ttb_fetch/3
+      observer_lib:
+      - display_progress_dialog/3
+      - make_obsbin/2
+      pubkey_cert:
+      - gen_test_certs/1
+      public_key:
+      - pkix_test_data/1
+      - sign/4
+      - verify/5
+      snmpc_lib:
+      - fix_table_info_augmentation/1
+      ssh:
+      - chk_algos_opts/1
+      ssh_transport:
+      - algo_class/1
+      - algo_classes/0
+      - algo_two_spec_class/1
+      - algo_two_spec_classes/0
+      ssl_alert:
+      - own_alert_txt/1
+      test_server:
+      - init_valgrind/0
+      - is_valgrind/0
+      - valgrind_format/2
+      - valgrind_new_leaks/0
+      test_server_gl:
+      - start_link/1
+      tls_connection:
+      - protocol_name/0
+      zlib:
+      - inflate/3
+      - on_load/0
+      - safeInflate/2
+   removed:
+      cdv_detail_wx:
+      - start_link/4
+      erts_debug:
+      - lock_counters/1
+      observer_lib:
+      - display_progress_dialog/2
+      test_server:
+      - init_purify/0
+      - purify_format/2
+      - purify_is_running/0
+      - purify_new_fds_inuse/0
+      - purify_new_leaks/0
+      test_server_gl:
+      - start_link/0
+      zlib:
+      - getQSize/1
+      - inflateSync/1
+...
