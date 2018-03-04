@@ -1,0 +1,87 @@
+%YAML 1.2
+---
+from: 20.1
+to: 20.2
+modules:
+   new:
+   removed:
+   - otpsgml_layout
+functions:
+   new:
+      crashdump_viewer:
+      - get_dump_versions/0
+      crypto:
+      - engine_ctrl_cmd_string/3
+      - engine_ctrl_cmd_string/4
+      - engine_get_all_methods/0
+      - engine_list/0
+      - engine_load/3
+      - engine_load/4
+      - engine_methods_convert_to_bitmask/2
+      - engine_unload/1
+      - get_test_engine/0
+      - privkey_to_pubkey/2
+      ct:
+      - remaining_test_procs/0
+      ct_util:
+      - is_marked/1
+      - is_marked/2
+      - mark_process/0
+      - mark_process/1
+      - remaining_test_procs/0
+      dtls_connection:
+      - empty_connection_state/2
+      dtls_record:
+      - empty_connection_state/1
+      dtls_socket:
+      - emulated_options/1
+      erts_debug:
+      - df/4
+      httpd_example:
+      - new_status_and_location/2
+      pubkey_cert:
+      - root_cert/2
+      public_key:
+      - pkix_test_root_cert/2
+      ssh_connection_handler:
+      - available_hkey_algorithms/2
+      ssh_dbg:
+      - algs/0
+      - algs/1
+      - algs/2
+      - algs/3
+      - hostkey/0
+      - hostkey/1
+      - hostkey/2
+      - hostkey/3
+      ssl_connection:
+      - error/4
+      ssl_dist_sup:
+      - consult/1
+      ssl_handshake:
+      - certify/7
+      ssl_record:
+      - activate_pending_connection_state/3
+      ssl_tls_dist_proxy:
+      - connect/4
+      tls_connection:
+      - empty_connection_state/2
+      tls_socket:
+      - emulated_options/1
+      zlib:
+      - inflateInit/3
+      - set_controlling_process/2
+   removed:
+      dtls_handshake:
+      - handshake_bin/2
+      ssl_connection:
+      - handle_call/5
+      - handle_common_event/5
+      - handle_info/3
+      ssl_handshake:
+      - certify/6
+      ssl_record:
+      - activate_pending_connection_state/2
+      ssl_tls_dist_proxy:
+      - connect/3
+...
