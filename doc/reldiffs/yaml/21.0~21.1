@@ -1,0 +1,87 @@
+%YAML 1.2
+---
+from: 21.0
+to: 21.1
+modules:
+   new:
+   - logger_handler_watcher
+   - ssl_cipher_format
+   - tls_sender
+   removed:
+   - dtls
+   - tls
+functions:
+   new:
+      crypto:
+      - engine_add/1
+      - engine_by_id/1
+      - engine_get_id/1
+      - engine_get_name/1
+      - engine_remove/1
+      - ensure_engine_loaded/2
+      - ensure_engine_loaded/3
+      - ensure_engine_unloaded/1
+      - ensure_engine_unloaded/2
+      - poly1305/2
+      dtls_connection:
+      - pids/1
+      - reinit/1
+      - send_alert_in_connection/2
+      httpd_example:
+      - post_204/3
+      logger:
+      - set_application_level/2
+      - unset_application_level/1
+      prim_inet:
+      - accept/3
+      proc_lib:
+      - report_cb/2
+      ssh_dbg:
+      - cbuf_in/1
+      - cbuf_list/0
+      - cbuf_start/0
+      - cbuf_start/1
+      - cbuf_stop_clear/0
+      - fmt_cbuf_item/1
+      - fmt_cbuf_items/0
+      ssh_transport:
+      - handle_packet_part/5
+      ssl_certificate:
+      - certificate_chain/4
+      - foldl_db/3
+      ssl_connection:
+      - dist_handshake_complete/2
+      - internal_renegotiation/2
+      ssl_pem_cache:
+      - insert/2
+      tls_connection:
+      - pids/1
+      - reinit/1
+      - renegotiation/2
+      - send_alert_in_connection/2
+      - start_link/8
+   removed:
+      logger_config:
+      - create/4
+      - get/1
+      proc_lib:
+      - report_cb/1
+      ssh_transport:
+      - handle_packet_part/4
+      ssl_cipher:
+      - erl_suite_definition/1
+      - openssl_suite/1
+      - openssl_suite_name/1
+      - suite/1
+      - suite_definition/1
+      - suite_to_str/1
+      ssl_connection:
+      - death_row/4
+      - handshake_complete/3
+      - write_application_data/3
+      ssl_pem_cache:
+      - insert/1
+      tls_connection:
+      - death_row/3
+      - start_link/7
+...
