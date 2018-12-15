@@ -1,0 +1,144 @@
+%YAML 1.2
+---
+from: 21.1
+to: 21.2
+modules:
+   new:
+   - atomics
+   - cdv_persistent_cb
+   - counters
+   - persistent_term
+   removed:
+functions:
+   new:
+      OTP-PUB-KEY:
+      - dec_dsa-with-sha224/3
+      - dec_dsa-with-sha256/3
+      - enc_dsa-with-sha224/3
+      - enc_dsa-with-sha256/3
+      - id-dsa-with-sha224/0
+      - id-dsa-with-sha256/0
+      crashdump_viewer:
+      - persistent_terms/0
+      eprof:
+      - analyze/4
+      - dump_data/0
+      erts_internal:
+      - atomics_new/2
+      - counters_add/3
+      - counters_get/2
+      - counters_info/1
+      - counters_new/1
+      - counters_put/3
+      - erase_persistent_terms/0
+      logger:
+      - update_handler_config/3
+      logger_disk_log_h:
+      - changing_config/3
+      - check_config/4
+      - filesync/3
+      - filter_config/1
+      - handle_info/3
+      - init/2
+      - reset_state/2
+      - terminate/3
+      - write/4
+      logger_h_common:
+      - adding_handler/1
+      - changing_config/3
+      - code_change/3
+      - filesync/2
+      - filter_config/1
+      - handle_call/3
+      - handle_cast/2
+      - handle_info/2
+      - info/2
+      - init/1
+      - log/2
+      - removing_handler/1
+      - reset/2
+      - start_link/1
+      - terminate/2
+      logger_server:
+      - diff_maps/2
+      - update_config/3
+      logger_std_h:
+      - changing_config/3
+      - check_config/4
+      - filesync/3
+      - filter_config/1
+      - handle_info/3
+      - init/2
+      - reset_state/2
+      - terminate/3
+      - write/4
+      pubkey_ssh:
+      - new_openssh_decode/1
+      - new_openssh_encode/1
+      - pad/2
+      reltool_utils:
+      - erl_libs/2
+      ssh_transport:
+      - call_KeyCb/3
+      - get_host_key/2
+      ssl_cipher:
+      - aead_decrypt/6
+      - aead_encrypt/5
+      - nonce_seed/2
+      ssl_connection:
+      - handle_trusted_certs_db/1
+      ssl_record:
+      - decipher_aead/5
+      - nonce_seed/3
+      tls_connection:
+      - send_sync_alert/2
+      tls_sender:
+      - send_and_ack_alert/2
+      - setopts/2
+   removed:
+      dtls_connection:
+      - next_record_if_active/1
+      - passive_receive/2
+      logger_disk_log_h:
+      - changing_config/2
+      - code_change/3
+      - handle_call/3
+      - handle_cast/2
+      - handle_info/2
+      - init/1
+      - log_handler_info/4
+      - start_link/3
+      - terminate/2
+      logger_h_common:
+      - call_cast_or_drop/4
+      - cancel_timer/1
+      - check_common_config/1
+      - check_load/1
+      - flush_log_events/0
+      - flush_log_events/1
+      - handler_exit/2
+      - info_notify/1
+      - kill_if_choked/5
+      - limit_burst/1
+      - log_to_binary/2
+      - overload_levels_ok/1
+      - set_restart_flag/2
+      - stop_or_restart/3
+      - unset_restart_flag/2
+      logger_std_h:
+      - changing_config/2
+      - code_change/3
+      - handle_call/3
+      - handle_cast/2
+      - handle_info/2
+      - init/1
+      - log_handler_info/4
+      - start_link/3
+      - terminate/2
+      ssl_cipher:
+      - cipher_aead/6
+      - decipher_aead/6
+      tls_connection:
+      - next_record_if_active/1
+      - passive_receive/2
+...
