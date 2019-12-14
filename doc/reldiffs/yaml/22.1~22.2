@@ -1,0 +1,601 @@
+%YAML 1.2
+---
+from: 22.1
+to: 22.2
+modules:
+   new:
+   - dtls_sup
+   - erl_compile_server
+   - httpd_logger
+   - megaco_user
+   - prim_net
+   - tls_bloom_filter
+   - tls_client_ticket_store
+   - tls_server_session_ticket
+   - tls_server_session_ticket_sup
+   - tls_server_sup
+   - tls_sup
+   removed:
+   - ct_webtool
+   - ct_webtool_sup
+   - vts
+functions:
+   new:
+      OTP-PUB-KEY:
+      - aes/0
+      - dec_AES-IV/2
+      - enc_AES-IV/2
+      - id-aes128-CBC/0
+      - id-aes128-wrap/0
+      - id-aes192-CBC/0
+      - id-aes192-wrap/0
+      - id-aes256-CBC/0
+      - id-aes256-wrap/0
+      crypto:
+      - mac/3
+      - mac/4
+      - macN/4
+      - macN/5
+      - mac_final/1
+      - mac_finalN/2
+      - mac_init/2
+      - mac_init/3
+      - mac_update/2
+      dtls_handshake:
+      - client_hello/7
+      dtls_listener_sup:
+      - lookup_listner/1
+      - register_listner/2
+      dtls_packet_demux:
+      - set_all_opts/2
+      erl_compile:
+      - compile/2
+      erts_internal:
+      - abort_pending_connection/2
+      - ets_info_binary/1
+      - ets_lookup_binary_info/2
+      - ets_raw_first/1
+      - ets_raw_next/2
+      - ets_super_user/1
+      - wait_release_literal_area_switch/1
+      gen_udp:
+      - send/3
+      - send/5
+      httpd_example:
+      - ignore_invalid_header/3
+      httpd_response:
+      - send_status/4
+      mnesia_tm:
+      - commit_participant/6
+      net:
+      - getifaddrs/0
+      - getifaddrs/1
+      - getifaddrs/2
+      observer_html_lib:
+      - expandable_term/4
+      - plain_page/2
+      - warning/2
+      observer_lib:
+      - colors/1
+      - create_attrs/1
+      - is_darkmode/1
+      - mix/3
+      re:
+      - internal_run/4
+      snmpa_supervisor:
+      - stop/0
+      - stop/1
+      snmpm:
+      - stop/1
+      snmpm_server:
+      - cbproxy_loop/1
+      - do_handle_agent/9
+      - do_handle_error/4
+      - do_handle_inform/10
+      - do_handle_pdu/5
+      - do_handle_report/9
+      - do_handle_trap/9
+      snmpm_supervisor:
+      - stop/1
+      socket:
+      - cancel/2
+      - debug/1
+      - info/1
+      ssh:
+      - connection_info/1
+      - daemon_info/2
+      ssh_connection:
+      - dummy/1
+      ssh_options:
+      - keep_set_options/2
+      - keep_user_options/2
+      ssh_system_sup:
+      - get_options/4
+      ssl:
+      - handle_options/3
+      ssl_alert:
+      - alert_format/4
+      - own_alert_format/4
+      - reason_code/4
+      ssl_cipher:
+      - decrypt_ticket/3
+      - encrypt_ticket/3
+      - srp_suites/1
+      - srp_suites_anon/1
+      ssl_handshake:
+      - add_alpn/2
+      - add_selected_version/1
+      - client_hello_extensions/7
+      - decode_alpn/1
+      - encode_hello_extensions/2
+      - validation_fun_and_state/10
+      ssl_logger:
+      - format/1
+      - log/4
+      ssl_session:
+      - client_select_session/4
+      - server_select_session/7
+      tls_connection_1_3:
+      - wait_cert_cr/4
+      - wait_ee/4
+      - wait_sh/4
+      tls_handshake_1_3:
+      - do_wait_cert_cr/2
+      - do_wait_ee/2
+      - do_wait_sh/2
+      - encrypted_extensions/1
+      - get_ticket_data/3
+      - is_valid_binder/4
+      - maybe_add_binders/3
+      - maybe_add_binders/4
+      - maybe_automatic_session_resumption/1
+      tls_v1:
+      - pre_shared_key/3
+      wxAuiNotebook:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxBitmapButton:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxButton:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxCalendarCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxCheckBox:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxCheckListBox:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxChoice:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxChoicebook:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxColourDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxColourPickerCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxComboBox:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxControl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxControlWithItems:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxDatePickerCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxDirDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxDirPickerCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxFileDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxFilePickerCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxFindReplaceDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxFontDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxFontPickerCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxFrame:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxGLCanvas:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxGauge:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxGenericDirCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxGrid:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxHtmlWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxListBox:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxListCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxListView:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxListbook:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxMDIChildFrame:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxMDIClientWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxMDIParentFrame:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxMenuBar:
+      - fromDIP/2
+      - getAutoWindowMenu/0
+      - getDPI/1
+      - isShownOnScreen/1
+      - oSXGetAppleMenu/1
+      - setAutoWindowMenu/1
+      - toDIP/2
+      wxMessageDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxMiniFrame:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxMouseEvent:
+      - getWheelAxis/1
+      wxMultiChoiceDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxNotebook:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPanel:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPasswordEntryDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPickerBase:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPopupTransientWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPopupWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPreviewCanvas:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPreviewControlBar:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPreviewFrame:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxPrintDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxProgressDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxRadioBox:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxRadioButton:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxSashLayoutWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxSashWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxScrollBar:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxScrolledWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxSingleChoiceDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxSlider:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxSpinButton:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxSpinCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxSplashScreen:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxSplitterWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxStaticBitmap:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxStaticBox:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxStaticLine:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxStaticText:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxStatusBar:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxStyledTextCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxTextCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxTextEntryDialog:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxToggleButton:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxToolBar:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxToolbook:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxTopLevelWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxTreeCtrl:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxTreebook:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+      wxWindow:
+      - fromDIP/2
+      - getDPI/1
+      - isShownOnScreen/1
+      - toDIP/2
+   removed:
+      ct_run:
+      - do_run/4
+      - tests/1
+      - tests/2
+      - tests/3
+      dtls_connection:
+      - next_record/1
+      dtls_handshake:
+      - client_hello/9
+      erts_internal:
+      - abort_connection/2
+      mnesia_tm:
+      - commit_participant/5
+      net:
+      - on_load/0
+      - on_load/1
+      observer_html_lib:
+      - expandable_term/3
+      - plain_page/1
+      - warning/1
+      observer_lib:
+      - create_attrs/0
+      ssh_connection:
+      - bind/4
+      - bound_channel/3
+      - unbind/3
+      - unbind_channel/2
+      ssh_xfer:
+      - attach/2
+      - attach/3
+      - connect/3
+      - connect/4
+      - connect/5
+      ssl:
+      - new_ssl_options/3
+      ssl_alert:
+      - alert_txt/1
+      - own_alert_txt/1
+      - reason_code/2
+      ssl_cipher:
+      - srp_suites/0
+      - srp_suites_anon/0
+      ssl_handshake:
+      - client_hello_extensions/6
+      - encode_hello_extensions/1
+      - validation_fun_and_state/9
+      ssl_logger:
+      - notice/2
+      ssl_session:
+      - client_id/4
+      - server_id/6
+      tls_connection:
+      - next_record/1
+      tls_handshake_1_3:
+      - encrypted_extensions/0
+      - server_hello/4
+...
