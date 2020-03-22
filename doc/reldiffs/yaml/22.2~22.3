@@ -1,0 +1,159 @@
+%YAML 1.2
+---
+from: 22.2
+to: 22.3
+modules:
+   new:
+   - socket_registry
+   removed:
+functions:
+   new:
+      OTP-PUB-KEY:
+      - id-Ed25519/0
+      - id-Ed448/0
+      - id-X25519/0
+      - id-X448/0
+      - id-edwards-curve-algs/0
+      crypto:
+      - equal_const_time/2
+      ct_property_test:
+      - cmnd_names/1
+      - num_calls/1
+      - present_result/4
+      - present_result/5
+      - print_frequency/0
+      - print_frequency_ranges/0
+      - sequential_parallel/1
+      - title/2
+      - title/3
+      dtls_packet_demux:
+      - getstat/2
+      - new_owner/1
+      dtls_socket:
+      - close/1
+      erts_internal:
+      - get_internal_state_blocked/1
+      megaco:
+      - format_long_timestamp/1
+      - format_long_timestamp/2
+      - format_short_timestamp/1
+      - format_short_timestamp/2
+      - format_timestamp/2
+      - formated_long_timestamp/0
+      - formated_short_timestamp/0
+      - formated_timestamp/0
+      - get_sdp_record_from_PropertyGroup/2
+      snmpm:
+      - info/1
+      - restart/1
+      snmpm_server:
+      - nis_init/2
+      - nis_loop/1
+      - restart/1
+      socket:
+      - number_of/0
+      - which_sockets/0
+      - which_sockets/1
+      ssh:
+      - get_sock_opts/2
+      - set_sock_opts/2
+      ssh_acceptor:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_cli:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_client_channel:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_connection_handler:
+      - get_sock_opts/2
+      - set_sock_opts/2
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_dbg:
+      - behaviour_info/1
+      ssh_message:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_sftp:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_sftpd:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_shell:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_transport:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssl:
+      - update_keys/2
+      ssl_connection:
+      - maybe_invalidate_session/6
+      tls_connection:
+      - send_key_update/2
+      - update_cipher_key/2
+      tls_handshake_1_3:
+      - key_update/1
+      tls_record:
+      - split_iovec/1
+      tls_sender:
+      - send_post_handshake/2
+      tls_server_session_ticket:
+      - start_link/4
+      tls_socket:
+      - close/2
+      uri_string:
+      - resolve/2
+      - resolve/3
+   removed:
+      ssh_acceptor:
+      - dbg_trace/3
+      ssh_cli:
+      - dbg_trace/3
+      ssh_client_channel:
+      - dbg_trace/3
+      ssh_connection_handler:
+      - dbg_trace/3
+      ssh_message:
+      - dbg_trace/3
+      ssh_sftp:
+      - dbg_trace/3
+      ssh_sftpd:
+      - dbg_trace/3
+      ssh_shell:
+      - dbg_trace/3
+      ssh_transport:
+      - dbg_trace/3
+      tls_server_session_ticket:
+      - start_link/3
+...
