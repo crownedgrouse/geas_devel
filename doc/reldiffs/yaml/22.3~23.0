@@ -1,0 +1,486 @@
+%YAML 1.2
+---
+from: 22.3
+to: 23.0
+modules:
+   new:
+   - beam_call_types
+   - beam_digraph
+   - beam_ssa_bool
+   - beam_types
+   - dialyzer_clean_core
+   - docgen_xml_to_chunk
+   - erpc
+   - gen_tcp_socket
+   - mnesia_rpc
+   - os_mon_mib
+   - pg
+   - prim_socket
+   - shell_docs
+   - ssh_agent
+   - ssh_channel_sup
+   - ssh_tcpip_forward_acceptor
+   - ssh_tcpip_forward_acceptor_sup
+   - ssh_tcpip_forward_client
+   - ssh_tcpip_forward_srv
+   - sys_core_prepare
+   removed:
+   - beam_except
+   - mod_browser
+   - mod_htaccess
+   - ssh_server_channel_sup
+   - ssl_v3
+functions:
+   new:
+      OTP-PUB-KEY:
+      - dec_DigestAlgorithm/2
+      - dec_EncodingParameters/2
+      - dec_HashAlgorithm/2
+      - dec_MaskGenAlgorithm/2
+      - dec_PSourceAlgorithm/2
+      - dec_RSAES-AlgorithmIdentifier/2
+      - dec_RSAES-OAEP-params/2
+      - dec_RSASSA-AlgorithmIdentifier/2
+      - dec_SHA1Parameters/2
+      - dec_rsa-pss/3
+      - dec_rsassa-pss/3
+      - emptyString/0
+      - enc_DigestAlgorithm/2
+      - enc_EncodingParameters/2
+      - enc_HashAlgorithm/2
+      - enc_MaskGenAlgorithm/2
+      - enc_PSourceAlgorithm/2
+      - enc_RSAES-AlgorithmIdentifier/2
+      - enc_RSAES-OAEP-params/2
+      - enc_RSASSA-AlgorithmIdentifier/2
+      - enc_SHA1Parameters/2
+      - enc_rsa-pss/3
+      - enc_rsassa-pss/3
+      - getdec_OAEP-PSSDigestAlgorithms/1
+      - getdec_PKCS1-v1-5DigestAlgorithms/1
+      - getdec_PKCS1Algorithms/1
+      - getdec_PKCS1MGFAlgorithms/1
+      - getdec_PKCS1PSourceAlgorithms/1
+      - getdec_internal_object_set_argument_14/1
+      - getdec_internal_object_set_argument_15/1
+      - getdec_internal_object_set_argument_16/1
+      - getdec_internal_object_set_argument_17/1
+      - getdec_internal_object_set_argument_18/1
+      - getdec_internal_object_set_argument_19/1
+      - getenc_OAEP-PSSDigestAlgorithms/1
+      - getenc_PKCS1-v1-5DigestAlgorithms/1
+      - getenc_PKCS1Algorithms/1
+      - getenc_PKCS1MGFAlgorithms/1
+      - getenc_PKCS1PSourceAlgorithms/1
+      - getenc_internal_object_set_argument_14/1
+      - getenc_internal_object_set_argument_15/1
+      - getenc_internal_object_set_argument_16/1
+      - getenc_internal_object_set_argument_17/1
+      - getenc_internal_object_set_argument_18/1
+      - getenc_internal_object_set_argument_19/1
+      - mgf1SHA1/0
+      - pSpecifiedEmpty/0
+      - rSAES-OAEP-Default-Identifier/0
+      - rSASSA-PSS-Default-Identifier/0
+      - sha1/0
+      - sha512-224WithRSAEncryption/0
+      - sha512-256WithRSAEncryption/0
+      application_controller:
+      - format_log/1
+      - format_log/2
+      beam_ssa:
+      - def_unused/3
+      - is_loop_header/1
+      - merge_blocks/1
+      beam_ssa_type:
+      - opt_start/2
+      beam_validator:
+      - validate/2
+      c:
+      - h/1
+      - h/2
+      - h/3
+      - hcb/1
+      - hcb/2
+      - hcb/3
+      - ht/1
+      - ht/2
+      - ht/3
+      code:
+      - all_available/0
+      - get_doc/1
+      - module_status/0
+      crypto:
+      - crypto_final/1
+      - crypto_get_data/1
+      ct_property_test:
+      - init_tool/1
+      dist_util:
+      - rejectable_flags/0
+      docgen_edoc_xml_cb:
+      - makesee/1
+      dtls_handshake:
+      - hello/5
+      edoc_specs:
+      - spec/1
+      eprof:
+      - profile/6
+      erl_distribution:
+      - start_link/3
+      erl_epmd:
+      - listen_port_please/2
+      erl_error:
+      - format_exception/8
+      erl_types:
+      - t_map_remove/3
+      erlang:
+      - atom_to_binary/1
+      - binary_to_atom/1
+      - binary_to_existing_atom/1
+      - spawn_monitor/2
+      - spawn_monitor/4
+      - spawn_request/1
+      - spawn_request/2
+      - spawn_request/3
+      - spawn_request/4
+      - spawn_request/5
+      - spawn_request_abandon/1
+      - term_to_iovec/1
+      - term_to_iovec/2
+      erts_internal:
+      - crasher/6
+      - create_dist_channel/3
+      - dist_spawn_init/1
+      - dist_spawn_request/4
+      - get_creation/0
+      - spawn_init/1
+      - spawn_request/4
+      eunit_lib:
+      - format_error/2
+      eunit_proc:
+      - get_output/0
+      - get_output_test/0
+      eunit_tests:
+      - get_output_test/0
+      file:
+      - del_dir_r/1
+      filelib:
+      - safe_relative_path/2
+      gen:
+      - check_response/2
+      - send_request/3
+      - wait_response/2
+      gen_event:
+      - check_response/2
+      - format_log/2
+      - send_request/3
+      - start_monitor/0
+      - start_monitor/1
+      - start_monitor/2
+      - wait_response/2
+      gen_fsm:
+      - format_log/2
+      gen_server:
+      - check_response/2
+      - format_log/2
+      - send_request/2
+      - start_monitor/3
+      - start_monitor/4
+      - wait_response/2
+      gen_statem:
+      - check_response/2
+      - format_log/2
+      - send_request/2
+      - start_monitor/3
+      - start_monitor/4
+      - wait_response/1
+      - wait_response/2
+      httpd:
+      - info/4
+      httpd_example:
+      - delay/3
+      - get/3
+      - get_bin/3
+      - new_status_and_location/3
+      - peer/3
+      - post/3
+      - print/3
+      - put/3
+      - test1/3
+      - yahoo/3
+      inet:
+      - gen_tcp_module/1
+      inet6_tcp_dist:
+      - address/0
+      - listen/2
+      inet6_tls_dist:
+      - listen/2
+      inet_tcp_dist:
+      - address/0
+      - gen_address/1
+      - gen_listen/3
+      - listen/2
+      inet_tls_dist:
+      - gen_listen/3
+      - listen/2
+      init:
+      - restart/1
+      logger_config:
+      - allow/1
+      - get_module_level/0
+      - set_module_level/2
+      - unset_module_level/1
+      logger_server:
+      - do_internal_log/4
+      net_kernel:
+      - dist_listen/0
+      - start_link/3
+      prim_file:
+      - read_handle_info/1
+      - read_handle_info/2
+      proc_lib:
+      - start_monitor/3
+      - start_monitor/4
+      - start_monitor/5
+      pubkey_cert:
+      - x509_pkix_sign_types/1
+      public_key:
+      - pkix_hash_type/1
+      raw_file_io_compressed:
+      - read_handle_info/2
+      raw_file_io_delayed:
+      - read_handle_info/2
+      raw_file_io_list:
+      - read_handle_info/2
+      shell_default:
+      - h/1
+      - h/2
+      - h/3
+      - hcb/1
+      - hcb/2
+      - hcb/3
+      - ht/1
+      - ht/2
+      - ht/3
+      socket:
+      - connect/1
+      - is_supported/1
+      - is_supported/2
+      - is_supported/3
+      - open/1
+      - socket_debug/1
+      ssh:
+      - tcpip_tunnel_from_server/5
+      - tcpip_tunnel_from_server/6
+      - tcpip_tunnel_to_server/5
+      - tcpip_tunnel_to_server/6
+      ssh_auth:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/3
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      - ssh_msg_userauth_result/1
+      ssh_connection:
+      - open_channel/4
+      - request_global_msg/3
+      ssh_connection_handler:
+      - global_request/5
+      - handle_direct_tcpip/6
+      - prohibited_sock_option/1
+      - retrieve/2
+      - start_channel/5
+      - store/3
+      ssh_dbg:
+      - ets_delete/2
+      - is_off/0
+      - is_on/0
+      ssh_file:
+      - add_host_key/4
+      - is_host_key/5
+      ssh_message:
+      - ssh2_privkey_decode2/1
+      - ssh2_pubkey_decode/1
+      - ssh2_pubkey_encode/1
+      ssh_options:
+      - check_preferred_algorithms/1
+      - initial_default_algorithms/2
+      ssh_subsystem_sup:
+      - start_channel/8
+      - tcpip_fwd_supervisor/1
+      ssh_system_sup:
+      - start_link/5
+      - stop_system/2
+      - stop_system/4
+      ssh_transport:
+      - clear_default_algorithms_env/0
+      - public_algo/1
+      - valid_key_sha_alg/3
+      sshc_sup:
+      - start_child/4
+      - stop_child/1
+      ssl_handshake:
+      - digitally_signed/5
+      - handle_client_hello_extensions/10
+      - handle_server_hello_extensions/10
+      - max_frag_enum/1
+      ssl_record:
+      - set_max_fragment_length/2
+      supervisor:
+      - format_log/1
+      - format_log/2
+      supervisor_bridge:
+      - format_log/1
+      - format_log/2
+      tls_handshake:
+      - hello/5
+      tls_record:
+      - get_tls_records/5
+      - split_iovec/2
+      - sufficient_crypto_support/1
+      tls_v1:
+      - exclusive_suites/1
+      wx_object:
+      - check_response/2
+      - send_request/2
+      - wait_response/1
+      - wait_response/2
+   removed:
+      OTP-PUB-KEY:
+      - dec_Algorithm/2
+      - dec_AlgorithmNull/2
+      - dec_DigestInfoNull/2
+      - enc_Algorithm/2
+      - enc_AlgorithmNull/2
+      - enc_DigestInfoNull/2
+      beam_ssa:
+      - def_used/2
+      - update_phi_labels/4
+      beam_ssa_type:
+      - opt_start/4
+      beam_validator:
+      - module/2
+      - type_anno/1
+      - type_anno/2
+      - type_anno/4
+      edoc_lib:
+      - is_relative_uri/1
+      - uri_get/1
+      edoc_specs:
+      - spec/2
+      erl_distribution:
+      - start_link/2
+      erl_syntax:
+      - cond_expr/1
+      - cond_expr_clauses/1
+      erlang:
+      - crasher/6
+      - spawn_opt/1
+      erts_internal:
+      - create_dist_channel/4
+      httpd_conf:
+      - check_enum/2
+      - clean/1
+      - custom_clean/3
+      - is_directory/1
+      - is_file/1
+      - load/1
+      - load/2
+      - make_integer/1
+      httpd_example:
+      - delay/1
+      - get/2
+      - get_bin/2
+      - new_status_and_location/2
+      - peer/2
+      - post/2
+      - print/1
+      - put/2
+      - test1/2
+      - yahoo/2
+      inet6_tcp_dist:
+      - listen/1
+      inet6_tls_dist:
+      - listen/1
+      inet_tcp_dist:
+      - gen_listen/2
+      inet_tls_dist:
+      - gen_listen/2
+      - listen/1
+      io_lib:
+      - collect_line/2
+      logger_config:
+      - allow/3
+      - cache_module_level/2
+      - get_module_level/1
+      - set_module_level/3
+      - unset_module_level/2
+      logger_server:
+      - cache_module_level/1
+      mod_actions:
+      - load/2
+      mod_alias:
+      - load/2
+      mod_auth:
+      - load/2
+      mod_esi:
+      - load/2
+      net_kernel:
+      - start_link/2
+      snmpm_server:
+      - async_get/5
+      - async_get/6
+      - async_get2/4
+      - async_get_bulk/7
+      - async_get_bulk/8
+      - async_get_bulk2/6
+      - async_get_next/5
+      - async_get_next/6
+      - async_get_next2/4
+      - async_set/5
+      - async_set/6
+      - async_set2/4
+      - sync_get/5
+      - sync_get/6
+      - sync_get2/4
+      - sync_get_bulk/7
+      - sync_get_bulk/8
+      - sync_get_bulk2/6
+      - sync_get_next/5
+      - sync_get_next/6
+      - sync_get_next2/4
+      - sync_set/5
+      - sync_set/6
+      - sync_set2/4
+      socket:
+      - ensure_sockaddr/1
+      - on_load/0
+      - on_load/1
+      - supports/3
+      ssh_file:
+      - add_host_key/3
+      - is_host_key/4
+      ssh_system_sup:
+      - start_link/4
+      - stop_system/1
+      - stop_system/3
+      ssh_transport:
+      - decompress/2
+      - decrypt_blocks/3
+      - is_valid_mac/3
+      - valid_key_sha_alg/2
+      sshc_sup:
+      - start_child/1
+      ssl_cipher:
+      - chacha_suites/1
+      ssl_handshake:
+      - handle_client_hello_extensions/9
+      - handle_server_hello_extensions/9
+      sys_core_bsm:
+      - format_error/1
+      systools_make:
+      - get_release/4
+      tls_record:
+      - get_tls_records/4
+      - split_iovec/1
+...
