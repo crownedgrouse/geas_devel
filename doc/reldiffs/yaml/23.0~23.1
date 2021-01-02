@@ -1,0 +1,157 @@
+%YAML 1.2
+---
+from: 23.0
+to: 23.1
+modules:
+   new:
+   - dtls_server_session_cache_sup
+   - dtls_server_sup
+   - pubkey_ocsp
+   - ssl_server_session_cache
+   - ssl_server_session_cache_db
+   - ssl_server_session_cache_sup
+   removed:
+functions:
+   new:
+      OTP-PUB-KEY:
+      - dec_AcceptableResponses/2
+      - dec_ArchiveCutoff/2
+      - dec_BasicOCSPResponse/2
+      - dec_CertID/2
+      - dec_CertStatus/2
+      - dec_CrlID/2
+      - dec_KeyHash/2
+      - dec_Nonce/2
+      - dec_OCSPRequest/2
+      - dec_OCSPResponse/2
+      - dec_OCSPResponseStatus/2
+      - dec_PreferredSignatureAlgorithm/2
+      - dec_PreferredSignatureAlgorithms/2
+      - dec_Request/2
+      - dec_ResponderID/2
+      - dec_ResponseBytes/2
+      - dec_ResponseData/2
+      - dec_RevokedInfo/2
+      - dec_ServiceLocator/2
+      - dec_Signature/2
+      - dec_SingleResponse/2
+      - dec_TBSRequest/2
+      - dec_UnknownInfo/2
+      - dec_VersionOCSP-2013-88/2
+      - enc_AcceptableResponses/2
+      - enc_ArchiveCutoff/2
+      - enc_BasicOCSPResponse/2
+      - enc_CertID/2
+      - enc_CertStatus/2
+      - enc_CrlID/2
+      - enc_KeyHash/2
+      - enc_Nonce/2
+      - enc_OCSPRequest/2
+      - enc_OCSPResponse/2
+      - enc_OCSPResponseStatus/2
+      - enc_PreferredSignatureAlgorithm/2
+      - enc_PreferredSignatureAlgorithms/2
+      - enc_Request/2
+      - enc_ResponderID/2
+      - enc_ResponseBytes/2
+      - enc_ResponseData/2
+      - enc_RevokedInfo/2
+      - enc_ServiceLocator/2
+      - enc_Signature/2
+      - enc_SingleResponse/2
+      - enc_TBSRequest/2
+      - enc_UnknownInfo/2
+      - enc_VersionOCSP-2013-88/2
+      - id-pkix-ocsp/0
+      - id-pkix-ocsp-archive-cutoff/0
+      - id-pkix-ocsp-basic/0
+      - id-pkix-ocsp-crl/0
+      - id-pkix-ocsp-extended-revoke/0
+      - id-pkix-ocsp-nocheck/0
+      - id-pkix-ocsp-nonce/0
+      - id-pkix-ocsp-pref-sig-algs/0
+      - id-pkix-ocsp-response/0
+      - id-pkix-ocsp-service-locator/0
+      dtls_connection:
+      - wait_ocsp_stapling/3
+      dtls_handshake:
+      - client_hello/9
+      http_transport:
+      - close_tag/1
+      httpd_example:
+      - patch/3
+      net_kernel:
+      - nodename/0
+      prim_socket:
+      - use_registry/1
+      pubkey_cert:
+      - subject_id/1
+      public_key:
+      - ocsp_extensions/1
+      - ocsp_responder_id/1
+      - pkix_ocsp_validate/5
+      - pkix_subject_id/1
+      socket:
+      - use_registry/1
+      ssh_connection:
+      - decode_pty_opts/1
+      - encode_pty_opts/1
+      ssh_dbg:
+      - reduce_state/2
+      - reduce_state/3
+      ssh_file:
+      - decode_ssh_file/4
+      ssl_cipher:
+      - decrypt_data/4
+      - encrypt_data/4
+      ssl_connection:
+      - wait_ocsp_stapling/4
+      ssl_handshake:
+      - certify/9
+      - client_hello_extensions/8
+      - select_session/9
+      - validation_fun_and_state/4
+      ssl_session:
+      - server_select_session/5
+      ssl_session_cache:
+      - take_oldest/1
+      tls_client_ticket_store:
+      - find_ticket/3
+      tls_connection:
+      - wait_ocsp_stapling/3
+      tls_handshake:
+      - client_hello/10
+      - ocsp_nonce/2
+      tls_socket:
+      - session_id_tracker/1
+   removed:
+      cpu_sup:
+      - code_change/3
+      disksup:
+      - code_change/3
+      dtls_handshake:
+      - client_hello/8
+      memsup:
+      - code_change/3
+      nteventlog:
+      - code_change/3
+      os_mon_sysinfo:
+      - code_change/3
+      os_sup:
+      - code_change/3
+      ssh_dbg:
+      - reduce_state/1
+      ssl_handshake:
+      - certify/7
+      - client_hello_extensions/7
+      - select_session/11
+      - validation_fun_and_state/10
+      ssl_manager:
+      - new_session_id/1
+      ssl_session:
+      - server_select_session/7
+      tls_client_ticket_store:
+      - find_ticket/2
+      tls_handshake:
+      - client_hello/9
+...

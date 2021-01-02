@@ -1,0 +1,185 @@
+%YAML 1.2
+---
+from: 23.1
+to: 23.2
+modules:
+   new:
+   - ct_suite
+   - dtls_gen_connection
+   - ssh_controller
+   - ssl_gen_statem
+   - tls_dtls_connection
+   - tls_gen_connection
+   removed:
+   - ssl_connection
+functions:
+   new:
+      beam_ssa:
+      - between/4
+      - dominators/2
+      dtls_connection:
+      - config_error/3
+      - initial_hello/3
+      dtls_listener_sup:
+      - lookup_listener/2
+      - register_listener/3
+      inet6_tls_dist:
+      - address/0
+      inet_db:
+      - set_servfail_retry_timeout/1
+      inet_tls_dist:
+      - address/0
+      - gen_address/1
+      shell_docs:
+      - render/5
+      - render_callback/5
+      - render_type/5
+      snmp_conf:
+      - check_transport_address/2
+      - check_transport_kind/1
+      - check_transport_opts/1
+      - check_transport_port_ranges/1
+      snmp_config:
+      - write_manager_snmp_files/4
+      - write_manager_snmp_files/5
+      - write_manager_snmp_files/7
+      snmp_framework_mib:
+      - which_req_transport/1
+      - which_transport/2
+      - which_trap_transport/1
+      snmpa_agent:
+      - restart_notif_worker/1
+      - worker/4
+      - worker_loop/2
+      snmpa_mib:
+      - subscribe_gc_events/1
+      - unsubscribe_gc_events/1
+      ssh_connection:
+      - send_environment_vars/3
+      sshc_sup:
+      - start_system_subsystem/4
+      - stop_system/1
+      ssl_certificate:
+      - trusted_cert_and_paths/4
+      ssl_handshake:
+      - path_validation_alert/1
+      - select_own_cert/1
+      ssl_session:
+      - legacy_session_id/0
+      tls_connection:
+      - config_error/3
+      - initial_hello/3
+      tls_connection_1_3:
+      - callback_mode/0
+      - code_change/4
+      - config_error/3
+      - connection/3
+      - downgrade/3
+      - format_status/2
+      - getopts/3
+      - init/1
+      - initial_hello/3
+      - negotiated/3
+      - send_key_update/2
+      - setopts/3
+      - start/3
+      - terminate/3
+      - update_cipher_key/2
+      - user_hello/3
+      - wait_cert/3
+      - wait_cert_cr/3
+      - wait_cv/3
+      - wait_ee/3
+      - wait_finished/3
+      - wait_sh/3
+      uri_string:
+      - allowed_characters/0
+      - percent_decode/1
+      wxTaskBarIcon:
+      - new/1
+   removed:
+      dtls_connection:
+      - close/5
+      - empty_connection_state/2
+      - encode_alert/3
+      - error/3
+      - getopts/3
+      - handle_protocol_record/3
+      - init/3
+      - next_event/3
+      - next_event/4
+      - pids/1
+      - protocol_name/0
+      - queue_change_cipher/2
+      - queue_handshake/2
+      - reinit/1
+      - reinit_handshake_data/1
+      - select_sni_extension/1
+      - send_alert/2
+      - send_alert_in_connection/2
+      - send_handshake/2
+      - setopts/3
+      - socket/4
+      - start_fsm/8
+      - start_link/7
+      dtls_listener_sup:
+      - lookup_listner/1
+      - register_listner/2
+      snmpa_agent:
+      - worker/2
+      - worker_loop/1
+      ssl_certificate:
+      - trusted_cert_and_path/4
+      ssl_handshake:
+      - handle_path_validation_error/7
+      tls_connection:
+      - close/5
+      - connected/3
+      - empty_connection_state/2
+      - encode_handshake/4
+      - error/3
+      - getopts/3
+      - handle_protocol_record/3
+      - init/3
+      - negotiated/3
+      - next_event/3
+      - next_event/4
+      - pids/1
+      - protocol_name/0
+      - queue_change_cipher/2
+      - queue_handshake/2
+      - recvd_ch/3
+      - reinit/1
+      - reinit_handshake_data/1
+      - renegotiation/2
+      - select_sni_extension/1
+      - send_alert/2
+      - send_alert_in_connection/2
+      - send_handshake/2
+      - send_handshake_flight/1
+      - send_key_update/2
+      - send_sync_alert/2
+      - setopts/3
+      - socket/4
+      - start/3
+      - start_fsm/8
+      - start_link/8
+      - update_cipher_key/2
+      - wait_cert/3
+      - wait_cert_cr/3
+      - wait_cv/3
+      - wait_ee/3
+      - wait_eoed/3
+      - wait_finished/3
+      - wait_flight2/3
+      - wait_sh/3
+      tls_connection_1_3:
+      - negotiated/4
+      - start/4
+      - wait_cert/4
+      - wait_cert_cr/4
+      - wait_cv/4
+      - wait_ee/4
+      - wait_finished/4
+      - wait_sh/4
+...
