@@ -1,0 +1,2402 @@
+%YAML 1.2
+---
+from: 23.3
+to: 24.0
+modules:
+   new:
+   - beam_ssa_bc_size
+   - beam_ssa_throw
+   - dialyzer_dot
+   - edoc_cli
+   - edoc_doclet_chunks
+   - edoc_layout_chunks
+   - erl_erts_errors
+   - erl_kernel_errors
+   - erl_stdlib_errors
+   - io_lib_format_ryu_table
+   - ssh_fsm_kexinit
+   - ssh_fsm_userauth_client
+   - ssh_fsm_userauth_server
+   - ssh_lib
+   - ssl_client_session_cache_db
+   - ssl_upgrade_server_session_cache_sup
+   - sys_messages
+   - tls_dist_server_sup
+   - tls_dist_sup
+   - wxBookCtrlBase
+   - wxBookCtrlEvent
+   - wxGLContext
+   - wxGraphicsGradientStops
+   - wxNotificationMessage
+   - wxWebView
+   - wxWebViewEvent
+   removed:
+   - cerl_cconv
+   - cerl_hipeify
+   - cerl_sets
+   - cerl_to_icode
+   - elf_format
+   - erl_tidy
+   - hipe
+   - hipe_adj_list
+   - hipe_amd64_assemble
+   - hipe_amd64_defuse
+   - hipe_amd64_encode
+   - hipe_amd64_frame
+   - hipe_amd64_liveness
+   - hipe_amd64_main
+   - hipe_amd64_pp
+   - hipe_amd64_ra
+   - hipe_amd64_ra_finalise
+   - hipe_amd64_ra_ls
+   - hipe_amd64_ra_naive
+   - hipe_amd64_ra_postconditions
+   - hipe_amd64_ra_sse2_postconditions
+   - hipe_amd64_registers
+   - hipe_amd64_specific
+   - hipe_amd64_specific_sse2
+   - hipe_amd64_specific_x87
+   - hipe_amd64_spill_restore
+   - hipe_amd64_sse2
+   - hipe_amd64_subst
+   - hipe_amd64_x87
+   - hipe_arm
+   - hipe_arm_assemble
+   - hipe_arm_cfg
+   - hipe_arm_defuse
+   - hipe_arm_encode
+   - hipe_arm_finalise
+   - hipe_arm_frame
+   - hipe_arm_liveness_gpr
+   - hipe_arm_main
+   - hipe_arm_pp
+   - hipe_arm_ra
+   - hipe_arm_ra_finalise
+   - hipe_arm_ra_ls
+   - hipe_arm_ra_naive
+   - hipe_arm_ra_postconditions
+   - hipe_arm_registers
+   - hipe_arm_specific
+   - hipe_arm_subst
+   - hipe_bb
+   - hipe_bb_weights
+   - hipe_beam_to_icode
+   - hipe_coalescing_regalloc
+   - hipe_consttab
+   - hipe_data_pp
+   - hipe_digraph
+   - hipe_dominators
+   - hipe_dot
+   - hipe_dsets
+   - hipe_gen_cfg
+   - hipe_gensym
+   - hipe_graph_coloring_regalloc
+   - hipe_icode
+   - hipe_icode2rtl
+   - hipe_icode_bincomp
+   - hipe_icode_call_elim
+   - hipe_icode_callgraph
+   - hipe_icode_cfg
+   - hipe_icode_coordinator
+   - hipe_icode_ebb
+   - hipe_icode_exceptions
+   - hipe_icode_fp
+   - hipe_icode_heap_test
+   - hipe_icode_inline_bifs
+   - hipe_icode_instruction_counter
+   - hipe_icode_liveness
+   - hipe_icode_mulret
+   - hipe_icode_pp
+   - hipe_icode_primops
+   - hipe_icode_range
+   - hipe_icode_split_arith
+   - hipe_icode_ssa
+   - hipe_icode_ssa_const_prop
+   - hipe_icode_ssa_copy_prop
+   - hipe_icode_ssa_struct_reuse
+   - hipe_icode_type
+   - hipe_ig
+   - hipe_ig_moves
+   - hipe_jit
+   - hipe_llvm
+   - hipe_llvm_liveness
+   - hipe_llvm_main
+   - hipe_llvm_merge
+   - hipe_ls_regalloc
+   - hipe_main
+   - hipe_moves
+   - hipe_node_sets
+   - hipe_optimistic_regalloc
+   - hipe_pack_constants
+   - hipe_ppc
+   - hipe_ppc_assemble
+   - hipe_ppc_cfg
+   - hipe_ppc_defuse
+   - hipe_ppc_encode
+   - hipe_ppc_finalise
+   - hipe_ppc_frame
+   - hipe_ppc_liveness_all
+   - hipe_ppc_liveness_fpr
+   - hipe_ppc_liveness_gpr
+   - hipe_ppc_main
+   - hipe_ppc_pp
+   - hipe_ppc_ra
+   - hipe_ppc_ra_finalise
+   - hipe_ppc_ra_ls
+   - hipe_ppc_ra_naive
+   - hipe_ppc_ra_postconditions
+   - hipe_ppc_ra_postconditions_fp
+   - hipe_ppc_registers
+   - hipe_ppc_specific
+   - hipe_ppc_specific_fp
+   - hipe_ppc_subst
+   - hipe_profile
+   - hipe_range_split
+   - hipe_reg_worklists
+   - hipe_regalloc_loop
+   - hipe_regalloc_prepass
+   - hipe_restore_reuse
+   - hipe_rtl
+   - hipe_rtl_arch
+   - hipe_rtl_arith_32
+   - hipe_rtl_arith_64
+   - hipe_rtl_binary
+   - hipe_rtl_binary_construct
+   - hipe_rtl_binary_match
+   - hipe_rtl_cfg
+   - hipe_rtl_cleanup_const
+   - hipe_rtl_exceptions
+   - hipe_rtl_lcm
+   - hipe_rtl_liveness
+   - hipe_rtl_mk_switch
+   - hipe_rtl_primops
+   - hipe_rtl_ssa
+   - hipe_rtl_ssa_avail_expr
+   - hipe_rtl_ssa_const_prop
+   - hipe_rtl_ssapre
+   - hipe_rtl_symbolic
+   - hipe_rtl_to_amd64
+   - hipe_rtl_to_arm
+   - hipe_rtl_to_llvm
+   - hipe_rtl_to_ppc
+   - hipe_rtl_to_sparc
+   - hipe_rtl_to_x86
+   - hipe_rtl_varmap
+   - hipe_rtl_verify_gcsafe
+   - hipe_sdi
+   - hipe_segment_trees
+   - hipe_sparc
+   - hipe_sparc_assemble
+   - hipe_sparc_cfg
+   - hipe_sparc_defuse
+   - hipe_sparc_encode
+   - hipe_sparc_finalise
+   - hipe_sparc_frame
+   - hipe_sparc_liveness_all
+   - hipe_sparc_liveness_fpr
+   - hipe_sparc_liveness_gpr
+   - hipe_sparc_main
+   - hipe_sparc_pp
+   - hipe_sparc_ra
+   - hipe_sparc_ra_finalise
+   - hipe_sparc_ra_ls
+   - hipe_sparc_ra_naive
+   - hipe_sparc_ra_postconditions
+   - hipe_sparc_ra_postconditions_fp
+   - hipe_sparc_registers
+   - hipe_sparc_specific
+   - hipe_sparc_specific_fp
+   - hipe_sparc_subst
+   - hipe_spillcost
+   - hipe_spillmin
+   - hipe_spillmin_color
+   - hipe_spillmin_scan
+   - hipe_tagscheme
+   - hipe_temp_map
+   - hipe_timing
+   - hipe_unified_loader
+   - hipe_vectors
+   - hipe_x86
+   - hipe_x86_assemble
+   - hipe_x86_cfg
+   - hipe_x86_defuse
+   - hipe_x86_encode
+   - hipe_x86_frame
+   - hipe_x86_liveness
+   - hipe_x86_main
+   - hipe_x86_postpass
+   - hipe_x86_pp
+   - hipe_x86_ra
+   - hipe_x86_ra_finalise
+   - hipe_x86_ra_ls
+   - hipe_x86_ra_naive
+   - hipe_x86_ra_postconditions
+   - hipe_x86_registers
+   - hipe_x86_specific
+   - hipe_x86_specific_x87
+   - hipe_x86_spill_restore
+   - hipe_x86_subst
+   - hipe_x86_x87
+   - igor
+   - inets_ftp_wrapper
+   - inets_tftp_wrapper
+   - megaco_ber_media_gateway_control_prev3a
+   - megaco_ber_media_gateway_control_prev3b
+   - megaco_ber_media_gateway_control_prev3c
+   - megaco_binary_name_resolver_prev3a
+   - megaco_binary_name_resolver_prev3b
+   - megaco_binary_name_resolver_prev3c
+   - megaco_binary_transformer_prev3a
+   - megaco_binary_transformer_prev3b
+   - megaco_binary_transformer_prev3c
+   - megaco_compact_text_encoder_prev3a
+   - megaco_compact_text_encoder_prev3b
+   - megaco_compact_text_encoder_prev3c
+   - megaco_per_media_gateway_control_prev3a
+   - megaco_per_media_gateway_control_prev3b
+   - megaco_per_media_gateway_control_prev3c
+   - megaco_pretty_text_encoder_prev3a
+   - megaco_pretty_text_encoder_prev3b
+   - megaco_pretty_text_encoder_prev3c
+   - megaco_text_parser_prev3a
+   - megaco_text_parser_prev3b
+   - megaco_text_parser_prev3c
+   - raw_file_io_raw
+   - ssh_connection_sup
+   - ssh_controller
+   - ssh_sup
+   - sshc_sup
+   - sshd_sup
+   - ssl_session_cache
+   - wxNotebookEvent
+functions:
+   new:
+      OTP-PUB-KEY:
+      - dec_CurvePrivateKey/2
+      - dec_CurvePublicKey/2
+      - enc_CurvePrivateKey/2
+      - enc_CurvePublicKey/2
+      PKCS-FRAME:
+      - dec_OneAsymmetricKey/2
+      - dec_PublicKey/2
+      - enc_OneAsymmetricKey/2
+      - enc_PublicKey/2
+      - getdec_internal_object_set_argument_10/1
+      - getenc_internal_object_set_argument_10/1
+      beam_ssa:
+      - definitions/2
+      - dominators_from_predecessors/2
+      - flatmapfold_instrs/4
+      - fold_blocks/4
+      - fold_instrs/4
+      - insert_on_edges/3
+      - mapfold_blocks/4
+      - mapfold_instrs/4
+      - merge_blocks/2
+      - split_blocks/4
+      beam_ssa_recv:
+      - format_error/1
+      beam_types:
+      - is_numerical_type/1
+      binary:
+      - decode_hex/1
+      - encode_hex/1
+      compile:
+      - compile_abstr/3
+      ct_gen_conn:
+      - code_change/3
+      - handle_call/3
+      - handle_cast/2
+      - handle_info/2
+      - init/1
+      - make_opts/1
+      - terminate/2
+      dbg:
+      - do_relay/2
+      dialyzer_utils:
+      - get_location/2
+      disk_log:
+      - all/0
+      disk_log_server:
+      - all/0
+      - get_log_pid/1
+      edoc_data:
+      - get_entry/2
+      - get_tags/2
+      edoc_doclet:
+      - behaviour_info/1
+      edoc_layout:
+      - behaviour_info/1
+      edoc_lib:
+      - infer_module_app/1
+      edoc_refs:
+      - get_docgen_link/1
+      edoc_specs:
+      - add_type_data/4
+      epp:
+      - scan_file/1
+      - scan_file/2
+      erl_error:
+      - format_exception/3
+      - format_exception/4
+      erl_parse:
+      - first_anno/1
+      erl_types:
+      - t_nonempty_binary/0
+      - t_nonempty_bitstring/0
+      erlang:
+      - alias/0
+      - alias/1
+      - error/3
+      - monitor/3
+      - unalias/1
+      erts_internal:
+      - @flush_monitor_messages_refopt/0
+      - beamfile_chunk/2
+      - beamfile_module_md5/1
+      - prepare_loading/2
+      erts_literal_area_collector:
+      - release_area_switch/0
+      - send_copy_request/3
+      file:
+      - delete/2
+      gen:
+      - receive_response/2
+      gen_event:
+      - receive_response/2
+      gen_server:
+      - receive_response/2
+      gen_statem:
+      - receive_response/1
+      - receive_response/2
+      gen_tcp_socket:
+      - cancel_monitor/1
+      - info/1
+      - monitor/1
+      - sendfile/4
+      - socket_to_list/1
+      - which_packet_type/1
+      - which_sockets/0
+      gl:
+      - bindBuffersBase/3
+      - bindBuffersRange/5
+      - bindImageTextures/2
+      - bindSamplers/2
+      - bindTextureUnit/2
+      - bindTextures/2
+      - bindVertexBuffer/4
+      - bindVertexBuffers/4
+      - blendBarrierKHR/0
+      - bufferPageCommitmentARB/4
+      - bufferStorage/4
+      - clearBufferData/5
+      - clearBufferSubData/7
+      - clearTexImage/5
+      - clearTexSubImage/11
+      - clipControl/2
+      - compressedTextureSubImage1D/7
+      - compressedTextureSubImage2D/9
+      - compressedTextureSubImage3D/11
+      - copyImageSubData/15
+      - createBuffers/1
+      - createFramebuffers/1
+      - createProgramPipelines/1
+      - createQueries/2
+      - createRenderbuffers/1
+      - createSamplers/1
+      - createTextures/2
+      - createTransformFeedbacks/1
+      - createVertexArrays/1
+      - debugMessageControl/5
+      - debugMessageInsert/6
+      - disableVertexArrayAttrib/2
+      - dispatchCompute/3
+      - dispatchComputeGroupSizeARB/6
+      - dispatchComputeIndirect/1
+      - enableVertexArrayAttrib/2
+      - evaluateDepthValuesARB/0
+      - flushMappedNamedBufferRange/3
+      - framebufferParameteri/3
+      - generateTextureMipmap/1
+      - getCompressedTexImageARB/3
+      - getDebugMessageLog/2
+      - getFramebufferParameteriv/2
+      - getGraphicsResetStatus/0
+      - getImageHandleARB/5
+      - getInternalformati64v/4
+      - getProgramInterfaceiv/3
+      - getProgramResourceIndex/3
+      - getProgramResourceLocation/3
+      - getProgramResourceLocationIndex/3
+      - getProgramResourceName/4
+      - getQueryBufferObjecti64v/4
+      - getQueryBufferObjectiv/4
+      - getQueryBufferObjectui64v/4
+      - getQueryBufferObjectuiv/4
+      - getUniformi64vARB/2
+      - getUniformui64vARB/2
+      - get_interface/0
+      - invalidateBufferData/1
+      - invalidateBufferSubData/3
+      - invalidateFramebuffer/2
+      - invalidateSubFramebuffer/6
+      - invalidateTexImage/2
+      - invalidateTexSubImage/8
+      - isImageHandleResidentARB/1
+      - isTextureHandleResidentARB/1
+      - lookup_func/0
+      - makeImageHandleNonResidentARB/1
+      - makeImageHandleResidentARB/2
+      - makeTextureHandleNonResidentARB/1
+      - makeTextureHandleResidentARB/1
+      - maxShaderCompilerThreadsARB/1
+      - maxShaderCompilerThreadsKHR/1
+      - memoryBarrierByRegion/1
+      - multiDrawArraysIndirect/4
+      - multiDrawArraysIndirectCount/5
+      - objectPtrLabel/3
+      - polygonOffsetClamp/3
+      - popDebugGroup/0
+      - primitiveBoundingBoxARB/8
+      - programUniform1i64ARB/3
+      - programUniform1i64vARB/3
+      - programUniform1ui64ARB/3
+      - programUniform1ui64vARB/3
+      - programUniform2i64ARB/4
+      - programUniform2i64vARB/3
+      - programUniform2ui64ARB/4
+      - programUniform2ui64vARB/3
+      - programUniform3i64ARB/5
+      - programUniform3i64vARB/3
+      - programUniform3ui64ARB/5
+      - programUniform3ui64vARB/3
+      - programUniform4i64ARB/6
+      - programUniform4i64vARB/3
+      - programUniform4ui64ARB/6
+      - programUniform4ui64vARB/3
+      - programUniformHandleui64ARB/3
+      - pushDebugGroup/4
+      - rec/1
+      - sampleCoverageARB/2
+      - shaderStorageBlockBinding/3
+      - texBufferRange/5
+      - texPageCommitmentARB/9
+      - texStorage2DMultisample/6
+      - texStorage3DMultisample/7
+      - textureBarrier/0
+      - textureBuffer/3
+      - textureBufferRange/5
+      - textureView/8
+      - transformFeedbackBufferBase/3
+      - transformFeedbackBufferRange/5
+      - uniform1i64ARB/2
+      - uniform1i64vARB/2
+      - uniform1ui64ARB/2
+      - uniform1ui64vARB/2
+      - uniform2i64ARB/3
+      - uniform2i64vARB/2
+      - uniform2ui64ARB/3
+      - uniform2ui64vARB/2
+      - uniform3i64ARB/4
+      - uniform3i64vARB/2
+      - uniform3ui64ARB/4
+      - uniform3ui64vARB/2
+      - uniform4i64ARB/5
+      - uniform4i64vARB/2
+      - uniform4ui64ARB/5
+      - uniform4ui64vARB/2
+      - uniformHandleui64ARB/2
+      - vertexArrayAttribBinding/3
+      - vertexArrayAttribFormat/6
+      - vertexArrayAttribIFormat/5
+      - vertexArrayAttribLFormat/5
+      - vertexArrayBindingDivisor/3
+      - vertexArrayElementBuffer/2
+      - vertexArrayVertexBuffer/5
+      - vertexArrayVertexBuffers/5
+      - vertexAttribBinding/2
+      - vertexAttribFormat/5
+      - vertexAttribIFormat/4
+      - vertexAttribLFormat/4
+      - vertexBindingDivisor/2
+      httpd_request:
+      - default_version/0
+      httpd_util:
+      - strip_extension_dot/1
+      inet:
+      - cancel_monitor/1
+      - info/1
+      - monitor/1
+      - socket_to_list/1
+      inet_db:
+      - put_socket_type/2
+      - take_socket_type/1
+      init:
+      - get_configfd/1
+      - script_name/0
+      - set_configfd/2
+      logger_backend:
+      - log_allowed/3
+      maps:
+      - filtermap/2
+      - foreach/2
+      - from_keys/2
+      - intersect/2
+      - intersect_with/3
+      - merge_with/3
+      ms_transform:
+      - parse_transform_info/0
+      os:
+      - env/0
+      prim_file:
+      - file_desc_to_ref/2
+      - internal_get_nif_resource/1
+      prim_socket:
+      - connect/3
+      - enc_sockaddr/1
+      - getopt/2
+      - getopt_native/3
+      - is_supported/1
+      - is_supported/2
+      - p_get/1
+      - sendfile/4
+      - sendfile/5
+      - sendfile_deferred_close/1
+      - sendmsg/5
+      - sendto/4
+      - setopt/3
+      - setopt_native/3
+      proplists:
+      - from_map/1
+      - to_map/1
+      - to_map/2
+      qlc:
+      - parse_transform_info/0
+      queue:
+      - all/2
+      - any/2
+      - delete/2
+      - delete_r/2
+      - delete_with/2
+      - delete_with_r/2
+      - filtermap/2
+      - fold/3
+      rand:
+      - bytes/1
+      - bytes_s/2
+      raw_file_io_compressed:
+      - internal_get_nif_resource/1
+      raw_file_io_delayed:
+      - internal_get_nif_resource/1
+      raw_file_io_list:
+      - internal_get_nif_resource/1
+      sets:
+      - from_list/2
+      - new/1
+      shell_docs:
+      - supported_tags/0
+      snmpa:
+      - which_transports/0
+      socket:
+      - cancel_monitor/1
+      - getopt/2
+      - getopt_native/3
+      - monitor/1
+      - monitored_by/1
+      - number_of_monitors/0
+      - number_of_monitors/1
+      - recvmsg/4
+      - sendfile/2
+      - sendfile/3
+      - sendfile/4
+      - sendfile/5
+      - setopt/3
+      - setopt_native/3
+      - to_list/1
+      - which_monitors/1
+      socket_registry:
+      - cancel_monitor/1
+      - monitor/1
+      - monitor/2
+      - monitored_by/1
+      - number_of_monitors/0
+      - number_of_monitors/1
+      - which_monitors/1
+      ssh:
+      - hostkey_fingerprint/1
+      - hostkey_fingerprint/2
+      - is_host/2
+      ssh_acceptor:
+      - acceptor_init/4
+      - acceptor_loop/7
+      - start_link/3
+      ssh_acceptor_sup:
+      - restart_child/2
+      - start_link/3
+      ssh_app:
+      - init/1
+      ssh_client_channel:
+      - get_print_info/2
+      ssh_connection:
+      - handle_msg/4
+      ssh_connection_handler:
+      - handle_ssh_msg_ext_info/2
+      - handshake/2
+      - send_bytes/2
+      - send_disconnect/6
+      - send_disconnect/7
+      - send_msg/2
+      - start_link_ng/4
+      - start_link_ng/5
+      - takeover/4
+      ssh_file:
+      - decode/2
+      - encode/2
+      ssh_message:
+      - ssh2_privkey_encode/1
+      ssh_server_channel:
+      - get_print_info/2
+      ssh_system_sup:
+      - addresses/1
+      - addresses/2
+      - get_daemon_listen_address/1
+      - get_options/2
+      - start_link/3
+      - start_subsystem/4
+      - start_system/3
+      ssh_transport:
+      - sign/4
+      ssl_cipher:
+      - bulk_cipher_algorithm/1
+      ssl_config:
+      - get_internal_active_n/0
+      - get_internal_active_n/1
+      - get_max_early_data_size/0
+      - get_ticket_lifetime/0
+      - get_ticket_store_size/0
+      - pre_1_3_session_opts/1
+      ssl_crl:
+      - trusted_cert_and_path/4
+      ssl_record:
+      - empty_connection_state/3
+      - step_encryption_state_read/1
+      - step_encryption_state_write/1
+      ssl_server_session_cache_db:
+      - terminate/1
+      supervisor:
+      - check_childspecs/2
+      test_server:
+      - init_memory_checker/0
+      - is_asan/0
+      - memory_checker/0
+      tls_client_ticket_store:
+      - find_ticket/5
+      tls_connection_1_3:
+      - wait_eoed/3
+      tls_handshake_1_3:
+      - do_wait_eoed/2
+      - early_data_size/1
+      - get_max_early_data/1
+      - maybe/0
+      - maybe_add_early_data_indication/3
+      - maybe_send_early_data/1
+      - update_current_read/3
+      tls_record:
+      - init_connection_states/3
+      tls_server_session_ticket:
+      - start_link/5
+      tls_server_session_ticket_sup:
+      - sup_name/1
+      tls_socket:
+      - session_id_tracker/2
+      tls_v1:
+      - key_length/1
+      wxAcceleratorTable:
+      - isOk/1
+      wxAuiNotebook:
+      - addPage/5
+      - create/4
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - insertPage/6
+      - isFrozen/1
+      wxBitmap:
+      - create/2
+      - isOk/1
+      wxBitmapButton:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - newCloseButton/2
+      wxBoxSizer:
+      - setDimension/3
+      - showItems/2
+      wxButton:
+      - getBitmapDisabled/1
+      - getBitmapFocus/1
+      - getBitmapLabel/1
+      - getDPIScaleFactor/1
+      - getDefaultSize/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - setBitmapDisabled/2
+      - setBitmapFocus/2
+      - setBitmapLabel/2
+      wxCalendarCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxCheckBox:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxCheckListBox:
+      - appendStrings/3
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - hitTest/3
+      - insertStrings/3
+      - insertStrings/4
+      - isFrozen/1
+      wxChoice:
+      - appendStrings/3
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - insertStrings/3
+      - insertStrings/4
+      - isFrozen/1
+      wxChoicebook:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxColourDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxColourPickerCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxComboBox:
+      - appendStrings/3
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - insertStrings/3
+      - insertStrings/4
+      - isFrozen/1
+      wxControl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxControlWithItems:
+      - appendStrings/3
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - insertStrings/3
+      - insertStrings/4
+      - isFrozen/1
+      wxCursor:
+      - isOk/1
+      - new/2
+      wxDatePickerCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxDirDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxDirPickerCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxFileDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxFilePickerCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxFindReplaceDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxFlexGridSizer:
+      - new/3
+      - setDimension/3
+      - showItems/2
+      wxFont:
+      - isOk/1
+      wxFontDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxFontPickerCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxFrame:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - sendSizeEvent/2
+      wxGBSizerItem:
+      - assignSizer/2
+      - assignSpacer/2
+      - assignSpacer/3
+      - assignWindow/2
+      wxGLCanvas:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - setCurrent/2
+      wxGauge:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxGenericDirCtrl:
+      - getDPIScaleFactor/1
+      - getPath/2
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxGraphicsContext:
+      - createFont/4
+      - createLinearGradientBrush/6
+      - createRadialGradientBrush/7
+      wxGraphicsRenderer:
+      - createFont/4
+      - createLinearGradientBrush/6
+      - createRadialGradientBrush/7
+      wxGrid:
+      - canDragCell/1
+      - canDragColMove/1
+      - canDragColSize/2
+      - canDragGridRowEdges/1
+      - canDragRowSize/2
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - scroll/2
+      - setGridCursor/2
+      - yToRow/3
+      wxGridBagSizer:
+      - setDimension/3
+      - showItems/2
+      wxGridCellTextEditor:
+      - new/1
+      wxGridSizer:
+      - new/3
+      - setDimension/3
+      - showItems/2
+      wxHtmlWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - scroll/2
+      - setRelatedStatusBar/3
+      wxIcon:
+      - isOk/1
+      wxIconBundle:
+      - getIcon/3
+      wxIconizeEvent:
+      - isIconized/1
+      wxImage:
+      - convertAlphaToMask/4
+      - convertAlphaToMask/5
+      - convertToGreyscale/4
+      - create/2
+      - isOk/1
+      wxListBox:
+      - appendStrings/3
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - hitTest/3
+      - insertStrings/3
+      - insertStrings/4
+      - isFrozen/1
+      wxListCtrl:
+      - getDPIScaleFactor/1
+      - getItemText/3
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxListView:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxListbook:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxLocale:
+      - addCatalog/3
+      - init/3
+      wxMDIChildFrame:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - sendSizeEvent/2
+      wxMDIClientWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxMDIParentFrame:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - sendSizeEvent/2
+      wxMenuBar:
+      - getDPIScaleFactor/1
+      - getMenuLabel/2
+      - getMenuLabelText/2
+      - getThemeEnabled/1
+      - isFrozen/1
+      - setMenuLabel/3
+      wxMenuItem:
+      - getItemLabel/1
+      - getItemLabelText/1
+      - getLabelText/1
+      - setItemLabel/2
+      wxMessageDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxMiniFrame:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - sendSizeEvent/2
+      wxMoveEvent:
+      - getRect/1
+      wxMultiChoiceDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxNotebook:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxPalette:
+      - new/1
+      - ok/1
+      wxPanel:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxPasswordEntryDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxPickerBase:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxPopupTransientWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxPopupWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxPreviewCanvas:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - scroll/2
+      wxPreviewControlBar:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxPreviewFrame:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - sendSizeEvent/2
+      wxPrintDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxProgressDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxRadioBox:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxRadioButton:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxSashLayoutWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxSashWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxScrollBar:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxScrolledWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - scroll/2
+      wxShowEvent:
+      - isShown/1
+      wxSingleChoiceDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxSizeEvent:
+      - getRect/1
+      wxSizer:
+      - setDimension/3
+      - showItems/2
+      wxSizerItem:
+      - assignSizer/2
+      - assignSpacer/2
+      - assignSpacer/3
+      - assignWindow/2
+      - new/1
+      wxSlider:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxSpinButton:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxSpinCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxSplashScreen:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - sendSizeEvent/2
+      wxSplitterWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxStaticBitmap:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxStaticBox:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxStaticBoxSizer:
+      - setDimension/3
+      - showItems/2
+      wxStaticLine:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxStaticText:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxStatusBar:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxStdDialogButtonSizer:
+      - setDimension/3
+      - showItems/2
+      wxStyledTextCtrl:
+      - addTextRaw/3
+      - appendTextRaw/3
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - startStyling/2
+      wxTextCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxTextEntryDialog:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      - new/0
+      wxToggleButton:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxToolBar:
+      - addControl/3
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - insertControl/4
+      - isFrozen/1
+      wxToolbook:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxTopLevelWindow:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxTreeCtrl:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxTreebook:
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wxWindow:
+      - create/3
+      - create/4
+      - getDPIScaleFactor/1
+      - getThemeEnabled/1
+      - isFrozen/1
+      wx_misc:
+      - mSWSetEmulationLevel/1
+      - mSWSetEmulationLevel/2
+      - shutdown/0
+      wxe_master:
+      - init_env/1
+      wxe_util:
+      - color/1
+      - debug_driver/1
+      - debug_ping/0
+      - delete_env/1
+      - get_consts/0
+      - get_name/2
+      - init_nif/1
+      - init_opengl/1
+      - make_env/0
+      - queue_cmd/1
+      - queue_cmd/2
+      - queue_cmd/3
+      - queue_cmd/4
+      - queue_cmd/5
+      - queue_cmd/6
+      - queue_cmd/7
+      - queue_cmd/8
+      - queue_cmd/9
+      - queue_cmd/10
+      - queue_cmd/11
+      - queue_cmd/12
+      - queue_cmd/13
+      - queue_cmd/14
+      - queue_cmd/15
+      - rec/1
+      - setup_consts/0
+   removed:
+      beam_jump:
+      - is_exit_instruction/1
+      beam_ssa:
+      - definitions/1
+      - dominators/1
+      - flatmapfold_instrs_rpo/4
+      - fold_instrs_rpo/4
+      - fold_po/3
+      - fold_po/4
+      - fold_rpo/3
+      - fold_rpo/4
+      - mapfold_blocks_rpo/4
+      - mapfold_instrs_rpo/4
+      - merge_blocks/1
+      - split_blocks/3
+      - uses/1
+      code:
+      - make_stub_module/3
+      compile:
+      - compile_beam/3
+      - iofile/1
+      crypto:
+      - block_decrypt/3
+      - block_decrypt/4
+      - block_encrypt/3
+      - block_encrypt/4
+      - cmac/3
+      - cmac/4
+      - equal_const_time/2
+      - hmac/3
+      - hmac/4
+      - hmac_final/1
+      - hmac_final_n/2
+      - hmac_init/2
+      - hmac_update/2
+      - next_iv/2
+      - next_iv/3
+      - poly1305/2
+      - stream_decrypt/2
+      - stream_encrypt/2
+      - stream_init/2
+      - stream_init/3
+      ct_gen_conn:
+      - check_opts/1
+      disk_log_server:
+      - accessible_logs/0
+      - dist_open/1
+      - get_local_pid/1
+      - get_log_pids/1
+      edoc_specs:
+      - add_data/4
+      epp:
+      - open/5
+      erlang:
+      - bitsize/1
+      - get_stacktrace/0
+      erts_internal:
+      - release_literal_area_switch/0
+      ets:
+      - filter/3
+      filename:
+      - find_src/1
+      - find_src/2
+      ftp:
+      - service_info/1
+      - services/0
+      - start_standalone/1
+      gl:
+      - call/2
+      - cast/2
+      - debugMessageControlARB/5
+      - debugMessageInsertARB/5
+      - getDebugMessageLogARB/2
+      - getGraphicsResetStatusARB/0
+      - getNamedStringARB/2
+      - getNamedStringivARB/2
+      - namedStringARB/3
+      - send_bin/1
+      - stencilClearTagEXT/2
+      inet_db:
+      - del_alt_ns/0
+      - del_ns/0
+      - del_search/0
+      logger_backend:
+      - log_allowed/2
+      megaco:
+      - format_versions/1
+      os:
+      - get_env_var/1
+      - list_env_vars/0
+      - set_env_var/2
+      - unset_env_var/1
+      pg2:
+      - create/1
+      - delete/1
+      - get_closest_pid/1
+      - get_local_members/1
+      - get_members/1
+      - handle_call/3
+      - handle_cast/2
+      - handle_info/2
+      - init/1
+      - join/2
+      - leave/2
+      - start/0
+      - start_link/0
+      - terminate/2
+      - which_groups/0
+      prim_socket:
+      - connect/2
+      - encode_path/1
+      - encode_sockaddr/1
+      - getopt/3
+      - setopt/4
+      ram_file:
+      - compress/1
+      - get_file_close/1
+      - open_mode/1
+      - set_file/2
+      - uncompress/1
+      - uudecode/1
+      - uuencode/1
+      snmp:
+      - add_agent_caps/2
+      - c/1
+      - c/2
+      - change_log_size/1
+      - compile/3
+      - current_address/0
+      - current_community/0
+      - current_context/0
+      - current_net_if_data/0
+      - current_request_id/0
+      - del_agent_caps/1
+      - dump_mibs/0
+      - dump_mibs/1
+      - enum_to_int/2
+      - enum_to_int/3
+      - get/2
+      - get_agent_caps/0
+      - get_symbolic_store_db/0
+      - info/1
+      - int_to_enum/2
+      - int_to_enum/3
+      - is_consistent/1
+      - load_mibs/2
+      - log_to_txt/2
+      - log_to_txt/3
+      - log_to_txt/4
+      - mib_to_hrl/1
+      - name_to_oid/1
+      - name_to_oid/2
+      - oid_to_name/1
+      - oid_to_name/2
+      - register_subagent/3
+      - send_notification/3
+      - send_notification/4
+      - send_notification/5
+      - send_notification/6
+      - send_trap/3
+      - send_trap/4
+      - unload_mibs/2
+      - unregister_subagent/2
+      snmpa:
+      - old_info_format/1
+      ssh_acceptor:
+      - acceptor_init/5
+      - acceptor_loop/6
+      - handle_established_connection/4
+      - start_link/4
+      ssh_acceptor_sup:
+      - start_child/5
+      - start_link/4
+      - stop_child/4
+      ssh_connection:
+      - handle_msg/3
+      ssh_connection_handler:
+      - init_connection_handler/3
+      - start_connection/4
+      - start_link/3
+      ssh_info:
+      - collect_pids/0
+      ssh_subsystem_sup:
+      - channel_supervisor/1
+      - connection_supervisor/1
+      ssh_system_sup:
+      - acceptor_supervisor/1
+      - channel_supervisor/1
+      - connection_supervisor/1
+      - get_options/4
+      - start_link/5
+      - start_subsystem/6
+      - stop_listener/3
+      - stop_subsystem/2
+      - stop_system/4
+      - subsystem_supervisor/1
+      - system_supervisor/3
+      ssl:
+      - cipher_suites/0
+      - cipher_suites/1
+      - ssl_accept/1
+      - ssl_accept/2
+      - ssl_accept/3
+      ssl_crl:
+      - trusted_cert_and_path/3
+      ssl_record:
+      - initial_connection_state/2
+      ssl_server_session_cache_db:
+      - take_oldest/1
+      ssl_server_session_cache_sup:
+      - session_opts/0
+      - start_child_dist/1
+      - start_link_dist/0
+      test_server:
+      - init_valgrind/0
+      - is_native/1
+      - valgrind_format/2
+      - valgrind_new_leaks/0
+      tls_client_ticket_store:
+      - find_ticket/3
+      tls_server_session_ticket:
+      - start_link/4
+      tls_socket:
+      - session_id_tracker/1
+      wxAuiNotebook:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxBitmapButton:
+      - fromDIP/2
+      - getBitmapSelected/1
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setBitmapSelected/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxBufferedDC:
+      - computeScaleAndOrigin/1
+      wxBufferedPaintDC:
+      - computeScaleAndOrigin/1
+      wxButton:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxCalendarCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxCheckBox:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxCheckListBox:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxChoice:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxChoicebook:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxClientDC:
+      - computeScaleAndOrigin/1
+      - new/0
+      wxColourData:
+      - new/1
+      wxColourDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxColourPickerCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxComboBox:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxControl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxControlWithItems:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxCursor:
+      - new/3
+      - new/4
+      wxDC:
+      - computeScaleAndOrigin/1
+      wxDatePickerCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxDirDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxDirPickerCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxFileDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxFilePickerCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxFindReplaceDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxFontDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxFontPickerCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxFrame:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxGBSizerItem:
+      - setSizer/2
+      - setSpacer/2
+      - setSpacer/3
+      - setWindow/2
+      wxGCDC:
+      - computeScaleAndOrigin/1
+      wxGLCanvas:
+      - fromDIP/2
+      - getContext/1
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - new/3
+      - popEventHandler/1
+      - popEventHandler/2
+      - setCurrent/1
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxGauge:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxGenericDirCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxGraphicsRenderer:
+      - createLinearGradientBrush/7
+      - createPen/2
+      - createRadialGradientBrush/8
+      wxGrid:
+      - canDragColSize/1
+      - canDragRowSize/1
+      - fromDIP/2
+      - getEventHandler/1
+      - getViewWidth/1
+      - makeModal/1
+      - makeModal/2
+      - new/4
+      - popEventHandler/1
+      - popEventHandler/2
+      - setCellAlignment/2
+      - setCellAlignment/4
+      - setCellBackgroundColour/2
+      - setCellTextColour/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxGridCellBoolEditor:
+      - beginEdit/4
+      - endEdit/4
+      - paintBackground/3
+      wxGridCellChoiceEditor:
+      - beginEdit/4
+      - endEdit/4
+      - paintBackground/3
+      wxGridCellEditor:
+      - beginEdit/4
+      - endEdit/4
+      - paintBackground/3
+      wxGridCellFloatEditor:
+      - beginEdit/4
+      - endEdit/4
+      - paintBackground/3
+      wxGridCellNumberEditor:
+      - beginEdit/4
+      - endEdit/4
+      - paintBackground/3
+      wxGridCellTextEditor:
+      - beginEdit/4
+      - endEdit/4
+      - paintBackground/3
+      wxHtmlWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxIconizeEvent:
+      - iconized/1
+      wxIdleEvent:
+      - canSend/1
+      wxImage:
+      - convertToGreyscale/2
+      wxListBox:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxListCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxListView:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxListbook:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxMDIChildFrame:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxMDIClientWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - new/1
+      - new/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxMDIParentFrame:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxMemoryDC:
+      - computeScaleAndOrigin/1
+      wxMenuBar:
+      - enable/1
+      - enable/2
+      - fromDIP/2
+      - getEventHandler/1
+      - getLabel/1
+      - isEnabled/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setLabel/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxMessageDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxMiniFrame:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxMirrorDC:
+      - computeScaleAndOrigin/1
+      wxMultiChoiceDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - new/0
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxNotebook:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPaintDC:
+      - computeScaleAndOrigin/1
+      - new/0
+      wxPanel:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - new/5
+      - new/6
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPasswordEntryDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPickerBase:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPopupTransientWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPopupWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPostScriptDC:
+      - computeScaleAndOrigin/1
+      - getResolution/0
+      - setResolution/1
+      wxPreviewCanvas:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPreviewControlBar:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPreviewFrame:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxPrintDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxProgressDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      - update/1
+      wxRadioBox:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - show/1
+      - toDIP/2
+      wxRadioButton:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxRegion:
+      - subtract/5
+      wxSashLayoutWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxSashWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxScreenDC:
+      - computeScaleAndOrigin/1
+      wxScrollBar:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxScrolledWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxShowEvent:
+      - getShow/1
+      wxSingleChoiceDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - new/0
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxSizerItem:
+      - new/0
+      - new/5
+      - new/6
+      - setSizer/2
+      - setSpacer/2
+      - setSpacer/3
+      - setWindow/2
+      wxSlider:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxSpinButton:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxSpinCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxSplashScreen:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - new/0
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxSplitterWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setSashSize/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxStaticBitmap:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxStaticBox:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxStaticLine:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxStaticText:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxStatusBar:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxStyledTextCtrl:
+      - addStyledText/2
+      - fromDIP/2
+      - getEventHandler/1
+      - getStyledText/3
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - startStyling/3
+      - toDIP/2
+      wxTextCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxTextEntryDialog:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxToggleButton:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxToolBar:
+      - addTool/3
+      - addTool/7
+      - fromDIP/2
+      - getEventHandler/1
+      - insertTool/4
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxToolbook:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxTopLevelWindow:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxTreeCtrl:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxTreebook:
+      - fromDIP/2
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      - toDIP/2
+      wxWindow:
+      - getEventHandler/1
+      - makeModal/1
+      - makeModal/2
+      - popEventHandler/1
+      - popEventHandler/2
+      - setVirtualSizeHints/2
+      - setVirtualSizeHints/3
+      - setVirtualSizeHints/4
+      wxWindowDC:
+      - computeScaleAndOrigin/1
+      - new/0
+      wx_misc:
+      - genericFindWindowAtPoint/1
+      wxe_master:
+      - init_port/1
+      wxe_server:
+      - invoke_callback/1
+      wxe_util:
+      - call/2
+      - cast/2
+      - colour_bin/1
+      - construct/2
+      - datetime_bin/1
+      - destroy/2
+      - from_bool/1
+      - send_bin/1
+      - to_bool/1
+      - wxgl_dl/0
+...
