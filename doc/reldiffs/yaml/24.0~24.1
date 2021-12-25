@@ -1,0 +1,149 @@
+%YAML 1.2
+---
+from: 24.0
+to: 24.1
+modules:
+   new:
+   - gen_udp_socket
+   - observer_sock_wx
+   removed:
+functions:
+   new:
+      application_controller:
+      - is_running/1
+      crypto:
+      - info/0
+      dbg_wx_trace_win:
+      - eval_output/4
+      - eval_output/5
+      - update_bindings/3
+      dialyzer_utils:
+      - is_compiler_generated/1
+      dtls_v1:
+      - exclusive_anonymous_suites/1
+      - exclusive_suites/1
+      erl_init:
+      - restart/0
+      erl_lint:
+      - check_format_string/1
+      erl_types:
+      - t_elements/2
+      - t_neg_integer/0
+      erlang:
+      - get_cookie/1
+      - set_cookie/1
+      erts_code_purger:
+      - wait_for_request/0
+      eunit_lib:
+      - format_stacktrace/1
+      gen_tcp_socket:
+      - fdopen/2
+      - unrecv/2
+      httpd_example:
+      - get_reply_headers/3
+      inet:
+      - gen_udp_module/1
+      - open_bind/8
+      observer_backend:
+      - get_socket_list/0
+      - socket_info/0
+      observer_lib:
+      - fill_info/3
+      prim_socket:
+      - init/0
+      socket:
+      - i/0
+      - i/1
+      - i/2
+      - which_socket_kind/1
+      ssh:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_format/3
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_acceptor:
+      - acceptor_loop/6
+      - ssh_dbg_format/3
+      ssh_connection_handler:
+      - start_link/4
+      - start_link/5
+      ssh_options:
+      - no_sensitive/2
+      ssl_certificate:
+      - certificate_chain/5
+      - find_cross_sign_root_paths/4
+      ssl_gen_statem:
+      - downgrade/3
+      ssl_handshake:
+      - path_validate/9
+      - path_validation/10
+      ssl_manager:
+      - refresh_trusted_db/1
+      - refresh_trusted_db/2
+      ssl_pkix_db:
+      - refresh_trusted_certs/1
+      - refresh_trusted_certs/2
+      tls_handshake_1_3:
+      - path_validation/10
+      tls_server_session_ticket:
+      - start_link/6
+      tls_v1:
+      - des_suites/1
+      - exclusive_anonymous_suites/1
+      - psk_exclusive/1
+      - psk_suites/1
+      - psk_suites_anon/1
+      - rc4_suites/1
+      - rsa_schemes/0
+      - rsa_suites/1
+      - srp_suites/1
+      - srp_suites_anon/1
+      wx:
+      - subscribe_events/0
+      wxTextAttr:
+      - getFontEncoding/1
+      - getFontFaceName/1
+      - getFontSize/1
+      - getFontStyle/1
+      - getFontUnderlined/1
+      - getFontWeight/1
+      - setFontEncoding/2
+      - setFontFaceName/2
+      - setFontFamily/2
+      - setFontPixelSize/2
+      - setFontPointSize/2
+      - setFontSize/2
+      - setFontStyle/2
+      - setFontUnderlined/2
+      - setFontWeight/2
+   removed:
+      dbg_wx_trace_win:
+      - update_bindings/2
+      mod_cgi:
+      - load/2
+      mod_disk_log:
+      - load/2
+      mod_security:
+      - load/2
+      ssh_acceptor:
+      - acceptor_loop/7
+      ssh_connection_handler:
+      - start_link_ng/4
+      - start_link_ng/5
+      ssl_certificate:
+      - certificate_chain/4
+      ssl_cipher:
+      - des_suites/1
+      - psk_suites/1
+      - psk_suites_anon/1
+      - rc4_suites/1
+      - rsa_suites/1
+      - srp_suites/1
+      - srp_suites_anon/1
+      tls_server_session_ticket:
+      - start_link/5
+      tls_v1:
+      - default_signature_schemes/1
+...
