@@ -1,0 +1,105 @@
+%YAML 1.2
+---
+from: 24.2
+to: 24.3
+modules:
+   new:
+   removed:
+functions:
+   new:
+      ELDAPv3:
+      - dec_RealSearchControlValue/2
+      - enc_RealSearchControlValue/2
+      dtls_gen_connection:
+      - close/4
+      dtls_handshake:
+      - client_hello/6
+      - client_hello/8
+      eldap:
+      - paged_result_control/1
+      - paged_result_control/2
+      - paged_result_cookie/1
+      erl_distribution:
+      - start_link/1
+      gen_sctp:
+      - connect/3
+      - connect_init/3
+      gen_tcp:
+      - connect/2
+      gen_udp:
+      - connect/2
+      inet:
+      - ensure_sockaddr/1
+      inet6_sctp:
+      - connect/4
+      inet6_udp:
+      - connect/2
+      inet_sctp:
+      - connect/4
+      inet_udp:
+      - connect/2
+      mnesia_controller:
+      - start_remote_sender/5
+      mnesia_loader:
+      - send_table/4
+      net_kernel:
+      - start/2
+      - start_link/1
+      scheduler:
+      - get_sample/0
+      - get_sample_all/0
+      ssh_connection_handler:
+      - ssh_dbg_format/3
+      ssl_certificate:
+      - handle_cert_auths/4
+      ssl_handshake:
+      - available_signature_algs/3
+      - certificate_authorities/2
+      - certificate_request/4
+      - client_hello_extensions/10
+      - select_curve/4
+      ssl_session:
+      - client_select_session/5
+      tls_gen_connection:
+      - close/4
+      tls_handshake:
+      - client_hello/11
+      tls_v1:
+      - des_exclusive/1
+      - rc4_exclusive/1
+      - rsa_exclusive/1
+      - srp_exclusive/1
+   removed:
+      dtls_gen_connection:
+      - close/5
+      dtls_handshake:
+      - client_hello/7
+      - client_hello/9
+      erl_distribution:
+      - start_link/3
+      global:
+      - node_disconnected/1
+      mnesia_controller:
+      - start_remote_sender/4
+      mnesia_loader:
+      - send_table/3
+      net_kernel:
+      - start_link/3
+      ssl_handshake:
+      - available_signature_algs/4
+      - certificate_request/5
+      - client_hello_extensions/8
+      - select_curve/2
+      ssl_session:
+      - client_select_session/4
+      tls_gen_connection:
+      - close/5
+      tls_handshake:
+      - client_hello/10
+      wxImage:
+      - create/6
+      - new/5
+      - setAlpha/3
+      - setData/3
+      - setData/5
+...
