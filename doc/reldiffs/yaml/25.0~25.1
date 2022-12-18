@@ -1,0 +1,88 @@
+%YAML 1.2
+---
+from: 25.0
+to: 25.1
+modules:
+   new:
+   removed:
+functions:
+   new:
+      crypto:
+      - engine_register/2
+      - engine_unload/2
+      - engine_unregister/2
+      erl_features:
+      - configurable/0
+      erlang:
+      - nodes/2
+      eunit_data:
+      - get_module_tests/2
+      - iter_init/3
+      eunit_proc:
+      - start/5
+      global:
+      - disconnect/0
+      - get_locker/0
+      global_group:
+      - group_configured/0
+      - member/1
+      - participant/1
+      - publish/2
+      httpc:
+      - ssl_verify_host_options/1
+      net_kernel:
+      - async_disconnect/1
+      pg:
+      - demonitor/1
+      - demonitor/2
+      - monitor/1
+      - monitor/2
+      - monitor_scope/0
+      - monitor_scope/1
+      snmpa_get:
+      - empty_pdu/0
+      - empty_pdu/1
+      - empty_pdu_size/0
+      - empty_scoped_pdu/0
+      - empty_scoped_pdu/1
+      - empty_scoped_pdu_size/0
+      snmpa_mpd:
+      - empty_msg/0
+      - empty_msg_size/0
+      ssh:
+      - daemon_replace_options/2
+      ssh_options:
+      - merge_options/3
+      ssh_system_sup:
+      - get_acceptor_options/1
+      - replace_acceptor_options/2
+      ssl_pkix_db:
+      - refresh_trusted_certs/3
+      - select_certentries_by_ref/2
+      ssl_session:
+      - legacy_session_id/1
+      tls_connection_1_3:
+      - hello_middlebox_assert/3
+      - hello_retry_middlebox_assert/3
+   removed:
+      eunit_data:
+      - get_module_tests/1
+      - iter_init/2
+      eunit_proc:
+      - start/4
+      global_group:
+      - config_scan/1
+      - config_scan/2
+      - publish_on_nodes/0
+      - sync_init/4
+      net_kernel:
+      - dist_listen/0
+      - update_publish_nodes/1
+      ssl_pkix_db:
+      - refresh_trusted_certs/1
+      - select_cert_by_issuer/2
+      ssl_session:
+      - legacy_session_id/0
+      tls_handshake_1_3:
+      - update_current_read/3
+...

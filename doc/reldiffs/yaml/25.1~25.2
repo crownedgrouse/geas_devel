@@ -1,0 +1,20 @@
+%YAML 1.2
+---
+from: 25.1
+to: 25.2
+modules:
+   new:
+   removed:
+functions:
+   new:
+      peer:
+      - init_supervision/2
+      - start_supervision/0
+      - supervision_child_spec/0
+      - system_code_change/4
+      - system_continue/3
+      - system_get_state/1
+      - system_replace_state/2
+      - system_terminate/4
+   removed:
+...
