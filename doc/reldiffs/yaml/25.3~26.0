@@ -1,0 +1,463 @@
+%YAML 1.2
+---
+from: 25.3
+to: 26.0
+modules:
+   new:
+   - argparse
+   - beam_ssa_alias
+   - beam_ssa_check
+   - beam_ssa_private_append
+   - dialyzer_cplt
+   - dialyzer_incremental
+   - dialyzer_iplt
+   - edlin_context
+   - edlin_type_suggestion
+   - ftp_internal
+   - inet_epmd_dist
+   - inet_epmd_socket
+   - prim_tty
+   - ssl_trace
+   - tls_client_connection_1_3
+   - tls_gen_connection_1_3
+   - tls_server_connection_1_3
+   removed:
+   - tls_connection_1_3
+   - user
+functions:
+   new:
+      application:
+      - ensure_all_started/3
+      - get_supervisor/1
+      application_controller:
+      - get_env/3
+      - start_application_request/2
+      base64:
+      - decode/2
+      - decode_to_string/2
+      - encode/2
+      - encode_to_string/2
+      - format_error/2
+      - mime_decode/2
+      - mime_decode_to_string/2
+      beam_bounds:
+      - bounds/2
+      - bounds/3
+      - infer_relop_types/3
+      - is_masking_redundant/2
+      beam_ssa_pp:
+      - format_type/1
+      beam_types:
+      - convert_ext/2
+      - update_tuple/2
+      binary:
+      - encode_hex/2
+      code:
+      - add_path/2
+      - add_patha/2
+      - add_paths/2
+      - add_pathsa/2
+      - add_pathsz/2
+      - add_pathz/2
+      - clear_cache/0
+      - del_paths/1
+      - get_doc/2
+      - replace_path/3
+      - set_path/2
+      code_server:
+      - absname/1
+      - is_loaded/1
+      - is_sticky/1
+      crypto:
+      - hash_final_xof/2
+      - hash_xof/3
+      dialyzer:
+      - run_report_modules_analyzed/1
+      - run_report_modules_changed_and_analyzed/1
+      dialyzer_callgraph:
+      - mod_deps_to_dot/2
+      - mod_deps_to_ps/3
+      dialyzer_cl:
+      - start_report_modules_analyzed/1
+      - start_report_modules_changed_and_analyzed/1
+      dialyzer_codeserver:
+      - is_member_meta_info/2
+      dialyzer_coordinator:
+      - get_job_input/2
+      - get_job_label/2
+      dialyzer_options:
+      - get_default_config_filename/0
+      dialyzer_plt:
+      - plt_kind/1
+      dialyzer_utils:
+      - p_foreach/2
+      - p_map/2
+      disk_log:
+      - next_file/1
+      disk_log_1:
+      - change_size_rotate/2
+      - do_rotate/2
+      - get_rotate_size/1
+      - open_rotate_log_file/3
+      - remove_files/4
+      - rotate_ext_close/1
+      - rotate_ext_log/3
+      - rotate_files/2
+      - rotate_write_cache/1
+      disksup:
+      - get_disk_info/0
+      - get_disk_info/1
+      dtls_connection:
+      - handle_trace/3
+      dtls_record:
+      - protocol_version_name/1
+      edlin:
+      - erase_line/0
+      edlin_expand:
+      - bif/1
+      - expand/2
+      - expand/3
+      - format_matches/2
+      - get_exports/1
+      - is_type/3
+      - match_arguments1/3
+      - number_matches/1
+      - over_word/1
+      - shell_default_or_bif/1
+      eldap:
+      - info/1
+      erl_syntax:
+      - map_comp/2
+      - map_comp_body/1
+      - map_comp_template/1
+      - map_generator/2
+      - map_generator_body/1
+      - map_generator_pattern/1
+      erlang:
+      - display_string/2
+      erts_internal:
+      - mc_iterator/1
+      - mc_refill/1
+      ets:
+      - lookup_element/4
+      gen:
+      - @wait_response_recv_opt/3
+      gen_tcp_socket:
+      - socket_setopts/2
+      gl:
+      - debugMessageInsert/5
+      - lookup_func/1
+      group:
+      - server/4
+      - whereis_shell/0
+      inet:
+      - parse_address/2
+      - parse_strict_address/2
+      inet_db:
+      - set_dnssec_ok/1
+      inet_tcp_dist:
+      - fam_address/1
+      - fam_listen/4
+      - fam_select/2
+      - fam_setup/4
+      - gen_hs_data/2
+      - merge_options/2
+      - merge_options/3
+      - nodelay/0
+      inet_tls_dist:
+      - fam_accept/2
+      - fam_accept_connection/6
+      - fam_address/1
+      - fam_listen/3
+      - fam_select/2
+      - fam_setup/6
+      - inet_ktls_getopt/3
+      - inet_ktls_setopt/3
+      - ktls_opt_cipher/6
+      - ktls_opt_ulp/1
+      - ktls_os/0
+      - set_ktls/1
+      - set_ktls_cipher/5
+      - set_ktls_ulp/2
+      io_lib_pretty:
+      - intermediate/7
+      lists:
+      - enumerate/3
+      - zip/3
+      - zip3/4
+      - zipwith/4
+      - zipwith3/5
+      maps:
+      - is_iterator_valid/1
+      - iterator/2
+      math:
+      - tau/0
+      mnesia_tm:
+      - get_transactions_count/0
+      observer:
+      - start/1
+      - start_and_wait/0
+      - start_and_wait/1
+      observer_wx:
+      - set_node/1
+      proc_lib:
+      - init_fail/2
+      - init_fail/3
+      pubkey_ocsp:
+      - handle_trace/3
+      public_key:
+      - handle_trace/3
+      shell:
+      - get_function/2
+      - get_state/0
+      - local_func/0
+      - local_func/1
+      - read_and_add_records/5
+      - start_interactive/0
+      - start_interactive/1
+      - whereis/0
+      shell_default:
+      - $handle_undefined_function/2
+      snmpa_agent_sup:
+      - start_master_agent/1
+      socket:
+      - table/1
+      - tables/0
+      ssl:
+      - handle_trace/3
+      - signature_algs/2
+      - update_options/3
+      ssl_certificate:
+      - handle_trace/3
+      ssl_gen_statem:
+      - handle_trace/3
+      - init_ssl_config/3
+      - ktls_handover/1
+      ssl_handshake:
+      - encode_hello_extensions/1
+      - handle_trace/3
+      - select_curve/2
+      timer:
+      - apply_repeatedly/4
+      - tc/4
+      tls_connection:
+      - handle_trace/3
+      tls_dtls_connection:
+      - handle_trace/3
+      tls_handshake:
+      - ocsp_nonce/1
+      tls_handshake_1_3:
+      - calculate_client_early_traffic_secret/2
+      - calculate_client_early_traffic_secret/5
+      - calculate_handshake_secrets/5
+      - calculate_traffic_secrets/1
+      - certificate_request/5
+      - check_cert_sign_algo/4
+      - choose_ticket/2
+      - ciphers_for_early_data/1
+      - create_change_cipher_spec/1
+      - encode_early_data/2
+      - finished/1
+      - forget_master_secret/1
+      - get_certificate_authorities/1
+      - get_certificate_params/1
+      - get_pre_shared_key/2
+      - get_pre_shared_key/4
+      - get_pre_shared_key_early_data/2
+      - get_signature_scheme_list/1
+      - get_supported_groups/1
+      - handle_pre_shared_key/3
+      - maybe_add_cookie_extension/2
+      - maybe_calculate_resumption_master_secret/1
+      - maybe_hello_retry_request/2
+      - process_certificate/2
+      - process_certificate_request/2
+      - replace_ch1_with_message_hash/1
+      - select_common_groups/2
+      - select_sign_algo/5
+      - server_hello/5
+      - set_client_random/2
+      - supported_groups_from_extensions/1
+      - update_start_state/2
+      - validate_finished/2
+      - verify_certificate_verify/2
+      - verify_signature_algorithm/2
+      tls_record:
+      - protocol_version_name/1
+      tls_sender:
+      - handle_trace/3
+      tls_server_session_ticket:
+      - handle_trace/3
+      - new/4
+      - start_link/7
+      tls_v1:
+      - certificate_verify/2
+      - default_groups/0
+      - groups/0
+      - handle_trace/3
+      - legacy_signature_algs_pre_13/0
+      unicode_util:
+      - is_wide/1
+      user_drv:
+      - callback_mode/0
+      - init/1
+      - init/3
+      - start_shell/0
+      - start_shell/1
+      - switch_loop/3
+      - whereis_group/0
+      wxGLCanvas:
+      - createSurface/1
+      - isDisplaySupported/1
+      wxGLContext:
+      - isOK/1
+      wxe_util:
+      - init_opengl/2
+      zip:
+      - zip_get_crc32/2
+   removed:
+      beam_bounds:
+      - */2
+      - +/2
+      - -/2
+      - band/2
+      - bor/2
+      - bsl/2
+      - bsr/2
+      - bxor/2
+      - div/2
+      - rem/2
+      code:
+      - is_module_native/1
+      - load_native_partial/2
+      - load_native_sticky/3
+      - rehash/0
+      dialyzer_cl_parse:
+      - collect_args/1
+      - get_lib_dir/1
+      dialyzer_plt:
+      - check_plt/3
+      - compute_md5_from_files/1
+      - from_file/1
+      - get_default_plt/0
+      - included_files/1
+      - merge_plts_or_report_conflicts/2
+      - plt_and_info_from_file/1
+      - pp_mod/1
+      - pp_non_returning/0
+      - to_file/4
+      disk_log:
+      - accessible_logs/0
+      - lclose/1
+      - lclose/2
+      edlin:
+      - erase_line/1
+      edlin_expand:
+      - format_matches/1
+      erl_features:
+      - load_allowed/1
+      erl_types:
+      - t_from_range_unsafe/2
+      - t_is_bitwidth/1
+      - t_is_fixnum/1
+      - t_is_matchstate/1
+      - t_matchstate/0
+      - t_matchstate/2
+      - t_matchstate_present/1
+      - t_matchstate_slot/2
+      - t_matchstate_slots/1
+      - t_matchstate_update_present/2
+      - t_matchstate_update_slot/3
+      - t_singleton_to_term/2
+      erlang:
+      - display_nl/0
+      erts_alloc_config:
+      - make_config/0
+      - make_config/1
+      - save_scenario/0
+      - state/0
+      - stop/0
+      ftp:
+      - code_change/3
+      - handle_call/3
+      - handle_cast/2
+      - handle_info/2
+      - init/1
+      - start_link/1
+      - start_link/2
+      - start_service/1
+      - stop_service/1
+      - terminate/2
+      gl:
+      - debugMessageInsert/6
+      - lookup_func/0
+      group:
+      - interfaces/1
+      - server/3
+      http_transport:
+      - ipv4_name/1
+      - ipv6_name/1
+      httpd_util:
+      - decode_hex/1
+      - encode_hex/1
+      - flatlength/1
+      - hexlist_to_integer/1
+      - integer_to_hexlist/1
+      - strip/1
+      - suffix/1
+      inet_tls_dist:
+      - gen_accept/2
+      - gen_accept_connection/6
+      - gen_address/1
+      - gen_close/2
+      - gen_listen/3
+      - gen_select/2
+      - gen_setup/6
+      - nodelay/0
+      io_lib_pretty:
+      - intermediate/6
+      pubkey_ocsp:
+      - otp_cert/1
+      shell:
+      - whereis_evaluator/0
+      - whereis_evaluator/1
+      ssl:
+      - handle_options/2
+      ssl_handshake:
+      - encode_hello_extensions/2
+      - path_validate/9
+      - select_curve/4
+      - supported_ecc/1
+      system_information:
+      - modules/1
+      tls_handshake:
+      - ocsp_nonce/2
+      tls_handshake_1_3:
+      - do_negotiated/2
+      - do_start/2
+      - do_wait_cert/2
+      - do_wait_cert_cr/2
+      - do_wait_cv/2
+      - do_wait_ee/2
+      - do_wait_eoed/2
+      - do_wait_finished/2
+      - do_wait_sh/2
+      - maybe/0
+      - maybe_automatic_session_resumption/1
+      - maybe_send_early_data/1
+      tls_server_session_ticket:
+      - new/3
+      - start_link/6
+      tls_v1:
+      - certificate_verify/3
+      - default_groups/1
+      - ecc_curves/2
+      - groups/2
+      user_drv:
+      - interfaces/1
+      - server/2
+      - start/2
+      - start/3
+      wxe_util:
+      - init_opengl/1
+...

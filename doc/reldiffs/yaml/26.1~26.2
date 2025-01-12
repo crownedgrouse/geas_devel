@@ -1,0 +1,45 @@
+%YAML 1.2
+---
+from: 26.1
+to: 26.2
+modules:
+   new:
+   - pubkey_policy_tree
+   removed:
+functions:
+   new:
+      OTP-PUB-KEY:
+      - dec_OTPDisplayText/2
+      - dec_OTPNoticeReference/2
+      - dec_OTPUserNotice/2
+      - enc_OTPDisplayText/2
+      - enc_OTPNoticeReference/2
+      - enc_OTPUserNotice/2
+      ct_logs:
+      - close/3
+      - init/3
+      - make_all_runs_index/2
+      - make_all_suites_index/2
+      ct_run:
+      - refresh_logs/2
+      ct_util:
+      - start/4
+      ssl_pkix_db:
+      - select_certs_by_ref/2
+   removed:
+      ct_logs:
+      - close/2
+      - init/2
+      - make_all_runs_index/1
+      - make_all_suites_index/1
+      ct_run:
+      - refresh_logs/1
+      ct_util:
+      - start/2
+      ssh_system_sup:
+      - addresses/1
+      ssl_certificate:
+      - is_valid_extkey_usage/2
+      ssl_cipher:
+      - effective_key_bits/1
+...

@@ -1,0 +1,374 @@
+%YAML 1.2
+---
+from: 26.2
+to: 27.0
+modules:
+   new:
+   - beam_core_to_ssa
+   - beam_doc
+   - beam_ssa_destructive_update
+   - beam_ssa_ss
+   - cte_track
+   - dtls_client_connection
+   - dtls_server_connection
+   - edoc_doclet_markdown
+   - edoc_html_to_markdown
+   - erts_trace_cleaner
+   - inet_dns_tsig
+   - json
+   - logger_handler
+   - shell_docs_markdown
+   - sys_coverage
+   - tls_client_connection
+   - tls_dtls_client_connection
+   - tls_dtls_gen_connection
+   - tls_dtls_server_connection
+   - tls_server_connection
+   - trace
+   - xmerl_xml_indent
+   removed:
+   - beam_kernel_to_ssa
+   - beam_ssa_private_append
+   - dialyzer_explanation
+   - dialyzer_gui_wx
+   - docgen_edoc_xml_cb
+   - docgen_otp_specs
+   - docgen_xmerl_xml_cb
+   - docgen_xml_to_chunk
+   - dtls_connection
+   - tls_connection
+   - tls_dtls_connection
+   - v3_kernel
+   - v3_kernel_pp
+functions:
+   new:
+      application_master:
+      - init/3
+      beam_dict:
+      - line/3
+      beam_digraph:
+      - foldv/3
+      - no_vertices/1
+      beam_ssa:
+      - eval_instr/1
+      c:
+      - h1/1
+      - h1/2
+      - h1/3
+      cerl:
+      - c_map/2
+      code:
+      - coverage_support/0
+      - get_coverage/2
+      - get_coverage_mode/0
+      - get_coverage_mode/1
+      - reset_coverage/1
+      - set_coverage_mode/1
+      code_server:
+      - get_mode/0
+      ct_hooks:
+      - behaviour_info/1
+      cth_surefire:
+      - handle_cast/2
+      dbg:
+      - deliver_and_flush/2
+      - do_relay/3
+      - erlang_trace/4
+      - session/2
+      - session_create/1
+      - session_destroy/1
+      diameter:
+      - which_connections/0
+      - which_connections/1
+      - which_transports/0
+      - which_transports/1
+      - which_watchdogs/0
+      - which_watchdogs/1
+      diameter_app:
+      - behaviour_info/1
+      diameter_config:
+      - which_transports/0
+      - which_transports/1
+      diameter_service:
+      - which_connections/0
+      - which_connections/1
+      - which_watchdogs/0
+      - which_watchdogs/1
+      diameter_transport:
+      - behaviour_info/1
+      disksup:
+      - format_status/1
+      dtls_gen_connection:
+      - alert_or_reset_connection/3
+      - empty_connection_state/1
+      - gen_info/3
+      - handle_flight_timer/1
+      - handle_state_timeout/3
+      - initial_state/7
+      - next_flight/1
+      - prepare_flight/1
+      - retransmit_epoch/2
+      - send_application_data/4
+      dtls_packet_demux:
+      - new_owner/2
+      - start_link/6
+      dtls_socket:
+      - close_listen/2
+      edoc_layout:
+      - authors/1
+      - copyright/1
+      - references/1
+      - sees/1
+      - since/1
+      - todos/1
+      - version/1
+      edoc_layout_chunks:
+      - overview/2
+      erl_error:
+      - behaviour_info/1
+      erl_prim_loader:
+      - prim_read_file/2
+      - read_file/1
+      erl_tracer:
+      - behaviour_info/1
+      erts_internal:
+      - trace/4
+      - trace_info/3
+      - trace_pattern/4
+      - trace_session_create/3
+      - trace_session_destroy/1
+      ets:
+      - first_lookup/1
+      - last_lookup/1
+      - next_lookup/2
+      - prev_lookup/2
+      - update_element/4
+      file:
+      - read_file/2
+      gb_sets:
+      - filtermap/2
+      - is_equal/2
+      - iterator/2
+      - iterator_from/3
+      - larger/2
+      - map/2
+      - smaller/2
+      gb_trees:
+      - iterator/2
+      - iterator_from/3
+      - larger/2
+      - smaller/2
+      httpd:
+      - behaviour_info/1
+      - serve/1
+      - start/1
+      inet_dns:
+      - decode/2
+      - decode_algname/1
+      - encode/2
+      - encode_algname/1
+      leex:
+      - string/1
+      - string/2
+      - token/2
+      - token/3
+      - tokens/2
+      - tokens/3
+      logger_formatter:
+      - behaviour_info/1
+      memsup:
+      - format_status/1
+      mod_esi:
+      - behaviour_info/1
+      mod_security:
+      - behaviour_info/1
+      ordsets:
+      - filtermap/2
+      - is_equal/2
+      - map/2
+      otp_internal:
+      - obsolete_callback/3
+      prim_socket:
+      - sendv/3
+      prim_tty:
+      - ansi_color/2
+      - ansi_regexp/0
+      - is_reader/2
+      - is_writer/2
+      - npwcwidth/2
+      proc_lib:
+      - get_label/1
+      - set_label/1
+      pubkey_ocsp:
+      - decode_response/1
+      - status/2
+      - verify_response/5
+      pubkey_os_cacerts:
+      - format_error/2
+      sets:
+      - filtermap/2
+      - is_equal/2
+      - map/2
+      shell:
+      - default_multiline_prompt/1
+      - erl_pp_format_func/1
+      - format_shell_func/1
+      - inverted_space_prompt/1
+      - multiline_prompt_func/1
+      - prompt_width/1
+      - prompt_width/2
+      snmp_framework_mib:
+      - message_processing_models/0
+      - security_levels/0
+      - security_models/0
+      snmpa:
+      - name_db/1
+      snmpm_conf:
+      - users_entry/4
+      socket:
+      - sendv/2
+      - sendv/3
+      - sendv/4
+      ssh_lib:
+      - set_label/1
+      - set_label/2
+      ssh_transport:
+      - handle_kexinit_msg/4
+      ssl:
+      - export_key_materials/4
+      - export_key_materials/5
+      ssl_certificate:
+      - validate/4
+      ssl_config:
+      - new_emulated/2
+      ssl_gen_statem:
+      - opposite_role/1
+      ssl_handshake:
+      - handle_server_hello_extensions/9
+      - path_validation_options/2
+      - select_session/8
+      - supported_hashsigns/1
+      ssl_record:
+      - empty_connection_state/1
+      - empty_connection_state/3
+      string:
+      - jaro_similarity/2
+      sys:
+      - behaviour_info/1
+      test_server_gl:
+      - capture_start/2
+      - capture_stop/1
+      timer:
+      - apply_after/2
+      - apply_after/3
+      - apply_interval/2
+      - apply_interval/3
+      - apply_repeatedly/2
+      - apply_repeatedly/3
+      tls_client_connection_1_3:
+      - maybe_generate_client_shares/1
+      tls_gen_connection:
+      - empty_connection_state/1
+      - gen_info/3
+      tls_handshake:
+      - get_signature_ext/3
+      tls_handshake_1_3:
+      - calculate_exporter_master_secret/1
+      tls_v1:
+      - cbc_suites/1
+      - create_info/4
+      - ec_curves/2
+   removed:
+      application_controller:
+      - init_starter/4
+      application_master:
+      - init/4
+      beam_dict:
+      - line/2
+      beam_types:
+      - make_float/2
+      code:
+      - set_primary_archive/4
+      crypto:
+      - crypto_dyn_iv_init/3
+      - crypto_dyn_iv_update/3
+      dbg:
+      - do_relay/2
+      - erlang_trace/3
+      dialyzer:
+      - gui/0
+      - gui/1
+      dialyzer_plt:
+      - get_specs/1
+      - get_specs/4
+      disksup:
+      - format_status/2
+      dtls_gen_connection:
+      - empty_connection_state/2
+      dtls_packet_demux:
+      - new_owner/1
+      - start_link/5
+      dtls_socket:
+      - close/1
+      dtls_v1:
+      - ecc_curves/1
+      edlin:
+      - inverted_space_prompt/1
+      erl_prim_loader:
+      - prim_get_file/2
+      erl_signal_handler:
+      - format_status/2
+      file:
+      - pid2name/1
+      memsup:
+      - format_status/2
+      prim_tty:
+      - npwcwidthstring/1
+      pubkey_ocsp:
+      - decode_ocsp_response/1
+      - get_ocsp_responder_id/1
+      - ocsp_status/1
+      - verify_ocsp_response/3
+      public_key:
+      - ocsp_responder_id/1
+      ssh_client_channel:
+      - cache_find/2
+      ssh_transport:
+      - handle_kexinit_msg/3
+      ssl_certificate:
+      - foldl_db/3
+      - validate/3
+      ssl_handshake:
+      - handle_server_hello_extensions/10
+      - prf/6
+      - select_session/9
+      - server_name/3
+      ssl_record:
+      - compress/3
+      - compressions/0
+      - empty_connection_state/2
+      - empty_connection_state/4
+      - uncompress/3
+      supervisor:
+      - format_status/2
+      tls_gen_connection:
+      - empty_connection_state/2
+      - renegotiate/2
+      - renegotiation/2
+      tls_v1:
+      - create_info/3
+      xmerl_sax_parser:
+      - stream/3
+      zlib:
+      - adler32/2
+      - adler32/3
+      - adler32_combine/4
+      - crc32/1
+      - crc32/2
+      - crc32/3
+      - crc32_combine/4
+      - getBufSize/1
+      - inflateChunk/1
+      - inflateChunk/2
+      - setBufSize/2
+...

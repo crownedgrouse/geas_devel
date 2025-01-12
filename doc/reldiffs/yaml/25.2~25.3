@@ -1,0 +1,18 @@
+%YAML 1.2
+---
+from: 25.2
+to: 25.3
+modules:
+   new:
+   removed:
+functions:
+   new:
+      dtls_packet_demux:
+      - connection_setup/2
+      - new_connection/2
+      erl_types:
+      - t_is_impossible/1
+      mnesia_tm:
+      - sync/0
+   removed:
+...
