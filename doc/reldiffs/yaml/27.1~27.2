@@ -1,0 +1,39 @@
+%YAML 1.2
+---
+from: 27.1
+to: 27.2
+modules:
+   new:
+   - ssh_connection_sup
+   removed:
+   - ssh_subsystem_sup
+functions:
+   new:
+      group:
+      - format_io_request_log/1
+      - log_io_request/3
+      json:
+      - format_key_value_list/3
+      - format_key_value_list_checked/3
+      os:
+      - internal_init_cmd_shell/0
+      ssh_connection_handler:
+      - start_link/3
+      ssh_system_sup:
+      - addresses/1
+      - start_connection/4
+      - start_system/2
+      - stop_system/1
+      ssl_handshake:
+      - certificate_request/5
+   removed:
+      ssh_connection_handler:
+      - start_link/5
+      ssh_system_sup:
+      - addresses/2
+      - start_subsystem/4
+      - start_system/3
+      - stop_system/2
+      ssl_handshake:
+      - certificate_request/4
+...
