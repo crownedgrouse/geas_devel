@@ -1,0 +1,405 @@
+%YAML 1.2
+---
+from: 27.3
+to: 28.0
+modules:
+   new:
+   - AlgorithmInformation-2009
+   - AttributeCertificateVersion1-2009
+   - CMSAesRsaesOaep-2009
+   - CryptographicMessageSyntax-2009
+   - CryptographicMessageSyntaxAlgorithms-2009
+   - DSS
+   - ECPrivateKey
+   - OCSP-2024-08
+   - OTP-PKIX
+   - PKCS-1
+   - PKCS-10
+   - PKCS-3
+   - PKIX-CommonTypes-2009
+   - PKIX-X400Address-2009
+   - PKIX1-PSS-OAEP-Algorithms-2009
+   - PKIX1Explicit-2009
+   - PKIX1Implicit-2009
+   - PKIXAlgs-2009
+   - PKIXAttributeCertificate-2009
+   - RFC5639
+   - Safecurves-pkix-18
+   - SecureMimeMessageV3dot1-2009
+   - erl_debugger
+   - inet_epmd_tls_socket
+   - prim_tty_sighandler
+   - pubkey_translation
+   - shell_docs_test
+   - ssh_lsocket
+   - ssh_lsocket_sup
+   - tls_socket_tcp
+   - tprof
+   - zstd
+   removed:
+   - OTP-PUB-KEY
+functions:
+   new:
+      PKCS-FRAME:
+      - dec_AsymmetricKeyPackage/2
+      - dec_EncryptionAlgorithmIdentifier/2
+      - dec_PrivateKeyAlgorithmIdentifier/2
+      - dec_ct-asymmetric-key-package/3
+      - enc_AsymmetricKeyPackage/2
+      - enc_EncryptionAlgorithmIdentifier/2
+      - enc_PrivateKeyAlgorithmIdentifier/2
+      - enc_ct-asymmetric-key-package/3
+      - getdec_ContentSet/1
+      - getdec_OneAsymmetricKeyAttributes/1
+      - getdec_internal_object_set_argument_11/1
+      - getenc_ContentSet/1
+      - getenc_OneAsymmetricKeyAttributes/1
+      - getenc_internal_object_set_argument_11/1
+      - id-ct-KP-aKeyPackage/0
+      beam_dict:
+      - debug_info/3
+      - debug_table/1
+      beam_digraph:
+      - del_vertex/2
+      - edges/1
+      - vertex/3
+      beam_ssa:
+      - can_be_guard_bif/3
+      - split_blocks_after/4
+      - split_blocks_before/4
+      beam_ssa_codegen:
+      - is_original_variable/1
+      beam_ssa_ss:
+      - phi/4
+      - prune/3
+      - prune_by_add/2
+      - size/1
+      binary:
+      - join/2
+      calendar:
+      - local_time_to_system_time/1
+      - local_time_to_system_time/2
+      - universal_time_to_system_time/1
+      - universal_time_to_system_time/2
+      code:
+      - get_debug_info/1
+      crypto:
+      - crypto_one_time_aead/4
+      - crypto_one_time_aead_init/4
+      dialyzer_contracts:
+      - check_contract/3
+      - check_contracts/3
+      dtls_gen_connection:
+      - initial_state/8
+      dtls_socket:
+      - socket/5
+      erl_anno:
+      - set_end_location/2
+      erl_eval:
+      - new_bindings/1
+      erl_syntax:
+      - strict_binary_generator/2
+      - strict_binary_generator_body/1
+      - strict_binary_generator_pattern/1
+      - strict_generator/2
+      - strict_generator_body/1
+      - strict_generator_pattern/1
+      - strict_map_generator/2
+      - strict_map_generator_body/1
+      - strict_map_generator_pattern/1
+      - zip_generator/1
+      - zip_generator_body/1
+      erl_types:
+      - t_is_same_opaque/2
+      - t_map_pairwise_merge/3
+      - t_map_remove/2
+      - t_nominal/2
+      - t_nominal_module/1
+      - t_opacity_conflict/3
+      - t_structural/1
+      erlang:
+      - exit/3
+      - hibernate/0
+      - link/2
+      - processes_iterator/0
+      - processes_next/1
+      erts_debug:
+      - lc_graph_merge/0
+      - lc_graph_merge/1
+      erts_internal:
+      - breakpoint/4
+      - notify_breakpoint_hit/3
+      - processes_next/1
+      - system_monitor/1
+      - system_monitor/3
+      etop_txt:
+      - newline/2
+      gl:
+      - init_nif/0
+      group:
+      - callback_mode/0
+      - dumb/3
+      - handle_info/3
+      - init/1
+      - init/3
+      - server/3
+      - start/1
+      - xterm/3
+      inet_epmd_dist:
+      - childspecs/0
+      inet_epmd_socket:
+      - check_ip/2
+      inet_tls_dist:
+      - get_ssl_client_options/0
+      - get_ssl_server_options/1
+      io_lib:
+      - bformat/2
+      - bformat/3
+      - bfwrite/2
+      - bfwrite/3
+      - bwrite/2
+      - bwrite_string/3
+      - collect_chars/1
+      - collect_chars_eager/4
+      - collect_line/1
+      - collect_line_no_eol/4
+      - get_until/1
+      - write/5
+      - write_bin/5
+      - write_binary_bin/4
+      - write_string_bin/3
+      io_lib_format:
+      - build_bin/1
+      - build_bin/2
+      - fwrite_bin/2
+      - fwrite_bin/3
+      io_lib_pretty:
+      - print_bin/2
+      - write/2
+      megaco_ber_media_gateway_control_v2:
+      - decode_message_acts_partial/1
+      - decode_message_mId/1
+      - decode_message_trans_partial/1
+      - decode_message_version/1
+      - decode_part/2
+      prim_socket:
+      - rest_iov/2
+      prim_tty:
+      - init_ssh/3
+      - load/0
+      - output_mode/1
+      - read/1
+      - read/2
+      - reader_loop/2
+      - tty_is_open/2
+      - update_geometry/3
+      shell:
+      - help/0
+      shell_docs:
+      - test/2
+      snmpm:
+      - which_agents/2
+      snmpm_config:
+      - is_known_engine_id/1
+      - which_agents/2
+      ssh:
+      - update_lsocket/3
+      ssh_acceptor_sup:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_fsm_kexinit:
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      ssh_system_sup:
+      - restart_acceptor/2
+      - ssh_dbg_flags/1
+      - ssh_dbg_format/2
+      - ssh_dbg_off/1
+      - ssh_dbg_on/1
+      - ssh_dbg_trace_points/0
+      - start_link/2
+      ssh_transport:
+      - next_seqnum/3
+      ssl_cipher:
+      - aead_type/2
+      ssl_config:
+      - handle_options/3
+      - handle_options/4
+      - handle_trace/3
+      - update_options/3
+      ssl_gen_statem:
+      - dtls_start_link/7
+      - socket_control/1
+      - tls_start_link/7
+      ssl_logger:
+      - keylog/3
+      - keylog_early_data/3
+      - keylog_hs/4
+      - keylog_traffic_1_3/5
+      - keylog_traffic_pre_1_3/2
+      supervisor:
+      - which_child/2
+      sys_coverage:
+      - beam_debug_info/1
+      tls_dtls_gen_connection:
+      - initial_state/9
+      tls_dyn_connection_sup:
+      - start_link/2
+      tls_gen_connection:
+      - start_fsm/6
+      - start_fsm/7
+      tls_gen_connection_1_3:
+      - initial_state/9
+      - maybe_forget_hs_secrets/2
+      - maybe_traffic_keylog_1_3/4
+      tls_handshake_1_3:
+      - early_data_secret/1
+      - handle_secrets/1
+      - hs_traffic_secrets/1
+      tls_socket:
+      - internal_inet_values/1
+      - monitor_socket/1
+      - socket/6
+      - upgrade/4
+      trace:
+      - system/3
+   removed:
+      PKCS-FRAME:
+      - dec_AttributeUsage/2
+      - dec_Context/2
+      - enc_AttributeUsage/2
+      - enc_Context/2
+      - getdec_SupportedContexts/1
+      - getdec_internal_object_set_argument_10/1
+      - getdec_internal_object_set_argument_7/1
+      - getenc_SupportedContexts/1
+      - getenc_internal_object_set_argument_10/1
+      - getenc_internal_object_set_argument_7/1
+      beam_ssa:
+      - split_blocks/4
+      beam_ssa_ss:
+      - prune/2
+      dialyzer_contracts:
+      - check_contract/2
+      - check_contracts/4
+      dtls_gen_connection:
+      - initial_state/7
+      - socket/4
+      dtls_socket:
+      - socket/4
+      erl_bif_types:
+      - opaque_args/5
+      - type/5
+      erl_internal:
+      - old_bif/2
+      erl_types:
+      - is_opaque_type/2
+      - lift_list_to_pos_empty/2
+      - number_max/2
+      - number_min/2
+      - t_atom_vals/2
+      - t_cons_hd/2
+      - t_cons_tl/2
+      - t_contains_opaque/1
+      - t_contains_opaque/2
+      - t_decorate_with_opaque/3
+      - t_elements/2
+      - t_find_opaque_mismatch/3
+      - t_find_unknown_opaque/3
+      - t_fun_args/2
+      - t_fun_arity/2
+      - t_fun_range/2
+      - t_has_opaque_subtype/2
+      - t_inf/3
+      - t_inf_lists/3
+      - t_is_any_atom/3
+      - t_is_atom/2
+      - t_is_binary/2
+      - t_is_bitstr/2
+      - t_is_boolean/2
+      - t_is_cons/2
+      - t_is_float/2
+      - t_is_fun/2
+      - t_is_instance/2
+      - t_is_integer/2
+      - t_is_map/2
+      - t_is_maybe_improper_list/2
+      - t_is_nil/2
+      - t_is_number/2
+      - t_is_pid/2
+      - t_is_port/2
+      - t_is_reference/2
+      - t_is_singleton/2
+      - t_is_tuple/2
+      - t_list_elements/2
+      - t_list_termination/2
+      - t_map_def_key/2
+      - t_map_def_val/2
+      - t_map_entries/2
+      - t_map_get/3
+      - t_map_is_key/3
+      - t_map_pairwise_merge/4
+      - t_map_put/3
+      - t_map_remove/3
+      - t_map_update/3
+      - t_number_vals/2
+      - t_opaque_from_records/1
+      - t_opaque_structure/1
+      - t_tuple_args/2
+      - t_tuple_size/2
+      - t_tuple_subtypes/2
+      - t_unopaque/1
+      - t_unopaque/2
+      gen_server:
+      - wake_hib/6
+      gen_statem:
+      - wakeup_from_hibernate/3
+      group:
+      - server/4
+      - server_loop/3
+      prim_tty:
+      - reader_loop/6
+      ssh_acceptor:
+      - listen/2
+      ssh_system_sup:
+      - replace_acceptor_options/2
+      - start_link/3
+      ssh_transport:
+      - next_seqnum/1
+      ssl:
+      - handle_options/3
+      - update_options/3
+      ssl_gen_statem:
+      - connect/8
+      - handshake/7
+      - socket_control/4
+      - socket_control/5
+      - start_link/7
+      - start_link/8
+      tls_dtls_gen_connection:
+      - initial_state/8
+      tls_dyn_connection_sup:
+      - start_child/3
+      - start_link/0
+      tls_gen_connection:
+      - socket/4
+      - start_fsm/8
+      tls_gen_connection_1_3:
+      - initial_state/8
+      tls_handshake_1_3:
+      - forget_master_secret/1
+      - maybe_calculate_resumption_master_secret/1
+      tls_sender:
+      - dist_tls_socket/1
+      tls_socket:
+      - internal_inet_values/0
+      - session_id_tracker/2
+      - socket/5
+      - upgrade/3
+...
