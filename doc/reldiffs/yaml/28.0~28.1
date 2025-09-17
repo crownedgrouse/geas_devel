@@ -1,0 +1,90 @@
+%YAML 1.2
+---
+from: 28.0
+to: 28.1
+modules:
+   new:
+   - EnrollmentMessageSyntax-2009
+   - PKIXCRMF-2009
+   - X509-ML-DSA-2025
+   - snmp_pdus_basic
+   removed:
+functions:
+   new:
+      PKIXAttributeCertificate-2009:
+      - getdec_internal_object_set_argument_3/1
+      - getdec_internal_object_set_argument_5/1
+      - getenc_internal_object_set_argument_3/1
+      - getenc_internal_object_set_argument_5/1
+      crypto:
+      - decapsulate_key/3
+      - encapsulate_key/2
+      dtls_socket:
+      - emulated_socket_options/2
+      erts_debug:
+      - unaligned_bitstring/2
+      http_util:
+      - connection_tokens/1
+      inet_res:
+      - getbyname/4
+      - getbyname_tm/4
+      - gethostbyaddr/3
+      - gethostbyaddr_tm/3
+      - gethostbyname/4
+      - gethostbyname_tm/4
+      pubkey_cert:
+      - mldsa_algo_to_oid/1
+      pubkey_cert_records:
+      - decode_extensions/1
+      - encode_extensions/1
+      - ext_oid/1
+      re:
+      - import/1
+      shell:
+      - hints/1
+      snmpm:
+      - do_snmpm_start_verify/4
+      - snmpm_start_verify/4
+      socket:
+      - rest_iov/2
+      ssh_lib:
+      - max_log_len/1
+      - trim_reason/1
+      ssl_pem_cache:
+      - insert/3
+      tls_sender:
+      - async_wait/3
+      tls_socket:
+      - default_inet_values/1
+      - emulated_options/2
+      - send/4
+      - split_options/2
+      tls_socket_tcp:
+      - cancel/2
+      - send_async/3
+      xmerl_html:
+      - #comment#/1
+      xmerl_lib:
+      - export_comment/1
+      xmerl_text:
+      - #comment#/1
+      xmerl_xml:
+      - #comment#/1
+      xmerl_xml_indent:
+      - #comment#/1
+   removed:
+      PKIXAttributeCertificate-2009:
+      - getdec_internal_object_set_argument_12/1
+      - getdec_internal_object_set_argument_4/1
+      - getenc_internal_object_set_argument_12/1
+      - getenc_internal_object_set_argument_4/1
+      snmpm:
+      - snmpm_start_verify/2
+      - snmpm_start_verify/3
+      tls_sender:
+      - setopts/2
+      tls_socket:
+      - default_inet_values/0
+      - emulated_options/0
+      - split_options/1
+...
