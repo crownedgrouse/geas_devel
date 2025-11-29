@@ -1,0 +1,17 @@
+%YAML 1.2
+---
+from: 28.1
+to: 28.2
+modules:
+   new:
+   - KEMAlgorithmInformation-2023
+   - PKIXCMP-2023
+   removed:
+functions:
+   new:
+      tls_sender:
+      - update_connection_state/4
+   removed:
+      tls_sender:
+      - update_connection_state/3
+...
